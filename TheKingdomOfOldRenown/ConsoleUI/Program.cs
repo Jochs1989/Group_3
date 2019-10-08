@@ -13,7 +13,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.Write("");
+            
             bool exit = false;
             // Here we call our list creation to create all our list from files we have saved in our bin
             // Then we show the user a welcome screen
