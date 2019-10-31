@@ -9,13 +9,7 @@ namespace DungeonCrawlerLibrary
     // Mob class to assign information for the Mobs
     public class Mob : LivingCreature 
     {
-        #region Fields
-
-        #endregion
-
-        #region Properties 
-
-        #endregion
+      
         
         // Constructor to assign information gathered
         #region Constructors
