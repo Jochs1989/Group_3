@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\RandomNumGenerator.cs" />
     <Compile Include="CreateLoadPlayer\LoadPlayerFromFile.cs" />
     <Compile Include="CreateLoadPlayer\NewOrOldPlayer.cs" />
     <Compile Include="CreateLoadPlayer\PlayerToFile.cs" />

@@ -34,3 +34,8 @@ F:\Fall 2019\CSC253\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\Dungeo
 F:\Fall 2019\CSC253\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.csproj.CoreCompileInputs.cache
 F:\Fall 2019\CSC253\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.dll
 F:\Fall 2019\CSC253\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.pdb
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.dll
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.pdb
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.csprojAssemblyReference.cache
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.dll
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.pdb

@@ -58,3 +58,12 @@ F:\Fall 2019\CSC253\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.csproj.C
 F:\Fall 2019\CSC253\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
 F:\Fall 2019\CSC253\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.exe
 F:\Fall 2019\CSC253\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.pdb
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\ConsoleUI.exe
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\ConsoleUI.pdb
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerLibrary.dll
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerLibrary.pdb
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.exe
+F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.pdb

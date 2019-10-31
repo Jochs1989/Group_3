@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawlerLibrary
 {
-    public class Treasure
+    // Treasure class to assign information for the Treasures
+    public class Treasure : Item 
     {
-        // Treasure class to assign information for the Treasures
-        public int ID { get; set; }
-        public string Name { get; set; }
+        //public int ID { get; set; }
+        //public string Name { get; set; }
 
         // Constructor to assign information gathered
-        public Treasure(int id, string name)
+        public Treasure(int id, string name) : base(id, name)
         {
             ID = id;
             Name = name;
