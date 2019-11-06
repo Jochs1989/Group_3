@@ -16,12 +16,13 @@ namespace DungeonCrawlerLibrary
         public int HP { get; set; }
         public int AC { get; set; }
         public int Attack { get; set; }
+        public int Gold { get; set; }
 
         #endregion
 
         // Constructor to assign information gathered
         #region Constructors
-        public LivingCreature(int id, string name, string description, int hp, int ac, int attack)
+        public LivingCreature(int id, string name, string description, int hp, int ac, int attack, )
         {
             ID = id;
             Name = name;
