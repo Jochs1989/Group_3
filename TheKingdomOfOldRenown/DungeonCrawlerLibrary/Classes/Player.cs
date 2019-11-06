@@ -14,7 +14,6 @@ namespace DungeonCrawlerLibrary
         public string PlayerClass { get; set; }
         public string PlayerRace { get; set; }
         public int XP { get; set; }
-        public int 
         public static Room CurrentRoom { get; set; }
 
 

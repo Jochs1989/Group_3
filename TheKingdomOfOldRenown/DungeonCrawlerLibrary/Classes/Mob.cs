@@ -13,14 +13,15 @@ namespace DungeonCrawlerLibrary
         
         // Constructor to assign information gathered
         #region Constructors
-        public Mob(int id, string name, string description, int hp, int ac, int attack) : base(id, name, description, hp, ac, attack)
+        public Mob(int id, string name, string description, int hp, int ac, int attack, int gold) : base(id, name, description, hp, ac, attack, gold)
         {
             ID = id;
             Name = name;
             HP = hp;
             Description = description;
             AC = ac;
-            Attack = attack; 
+            Attack = attack;
+            Gold = gold; //TODO random gold mob holds
         }
         #endregion
     }
