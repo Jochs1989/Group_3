@@ -39,3 +39,7 @@ F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\D
 F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.csprojAssemblyReference.cache
 F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.dll
 F:\5th Semester\Adv_C#\Project\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.pdb
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.csprojAssemblyReference.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.dll
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.pdb

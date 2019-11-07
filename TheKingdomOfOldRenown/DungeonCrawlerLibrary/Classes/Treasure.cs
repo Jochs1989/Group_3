@@ -11,10 +11,11 @@ namespace DungeonCrawlerLibrary
     {
      
         // Constructor to assign information gathered
-        public Treasure(int id, string name) : base(id, name)
+        public Treasure(int id, string name, string description) : base(id, name, description)
         {
             ID = id;
             Name = name;
+            Description = description;
         }
     }
 }

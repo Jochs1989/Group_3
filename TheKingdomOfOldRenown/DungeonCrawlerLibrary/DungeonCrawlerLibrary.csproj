@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\RandomNumGenerator.cs" />
+    <Compile Include="Combat\Combat.cs" />
+    <Compile Include="Combat\RollDice.cs" />
     <Compile Include="CreateLoadPlayer\LoadPlayerFromFile.cs" />
     <Compile Include="CreateLoadPlayer\NewOrOldPlayer.cs" />
     <Compile Include="CreateLoadPlayer\PlayerToFile.cs" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonCrawlerLibrary.Classes
+namespace DungeonCrawlerLibrary
 {
     public class RandomNumGenerator
     {

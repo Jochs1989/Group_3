@@ -9,13 +9,26 @@ namespace DungeonCrawlerLibrary
     // Potion class to assign information for the Potions
     public class Potion : Item 
     {
+        private int _hpRecovery;
+        private int _mpRecovery;
+        private int _attackUP;
+        private int _acUP;
+
+        public int HPRecovery { get { return _hpRecovery; } set { _hpRecovery = value; } }
+        public int MPRecovery { get { return _mpRecovery; } set { _mpRecovery = value; } }
+        public int AttackUP { get { return _attackUP; } set { _attackUP = value; } }
+        public int ACUP { get { return _acUP; } set { _acUP = value; } }
 
         // Constructor to assign information gathered
-        public Potion(int id, string name, string description) : base(id, name, description)
+        public Potion(int hpRecovery, int mpRecovery, int attackUP, int acUP, int id, string name, string description) : base(id, name, description)
         {
             ID = id;
             Name = name;
             Description = description;
+            HPRecovery = hpRecovery;
+            MPRecovery = mpRecovery;
+            AttackUP = attackUP;
+            ACUP = acUP;
         }
     }
 }

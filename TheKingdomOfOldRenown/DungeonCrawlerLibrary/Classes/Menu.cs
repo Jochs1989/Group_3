@@ -9,7 +9,9 @@ namespace DungeonCrawlerLibrary
     // Menu class to assign information for the menu
     public class Menu
     {
-        public string Options { get; set; }
+        private string _options;
+
+        public string Options { get { return _options; } set { _options = value; } }
 
         // Constructor to assign information gathered
         public Menu(string options)

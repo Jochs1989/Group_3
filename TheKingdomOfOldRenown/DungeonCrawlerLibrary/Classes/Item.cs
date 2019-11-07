@@ -9,9 +9,13 @@ namespace DungeonCrawlerLibrary
     // Item class to assign information for the items
     public class Item
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        private int _id;
+        private string _name;
+        private string _description;
+
+        public int ID { get { return _id; } set { _id = value; } }
+        public string Name { get { return _name; } set { _name = value; } }
+        public string Description { get { return _description; } set { _description = value; } }
 
         // Constructor to assign information gathered
         public Item(int id, string name, string description)
