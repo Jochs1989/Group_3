@@ -36,6 +36,21 @@ namespace DungeonCrawlerLibrary
             Gold = gold; //TODO random gold mob holds
             XP = xp;
         }
+
+        // This is how you make a copy of a mob!!!
+        public Mob(Mob copy) : base(copy.HP, copy.AC, copy.Attack, copy.Gold, copy.XP)
+        {
+            ID = copy.ID;
+            Name = copy.Name;
+            HP = copy.HP;
+            Description = copy.Description;
+            AttackDiceSides = copy.AttackDiceSides;
+            AttackDiceAmount = copy.AttackDiceAmount;
+            AC = copy.AC;
+            Attack = copy.Attack;
+            Gold = copy.Gold;
+            XP = copy.XP;
+        }
         #endregion
     }
 }

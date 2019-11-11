@@ -20,11 +20,13 @@ namespace DungeonCrawlerLibrary
         public int ACUP { get { return _acUP; } set { _acUP = value; } }
 
         // Constructor to assign information gathered
-        public Potion(int hpRecovery, int mpRecovery, int attackUP, int acUP, int id, string name, string description) : base(id, name, description)
+        public Potion(int hpRecovery, int mpRecovery, int attackUP, int acUP, int id, string name, string description, int price, bool canEquipt) : base(id, name, description, price, canEquipt)
         {
             ID = id;
             Name = name;
             Description = description;
+            Price = price;
+            CanEquipt = canEquipt;
             HPRecovery = hpRecovery;
             MPRecovery = mpRecovery;
             AttackUP = attackUP;

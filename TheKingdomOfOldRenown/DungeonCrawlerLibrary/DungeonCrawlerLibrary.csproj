@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\GameCommands.cs" />
     <Compile Include="Classes\RandomNumGenerator.cs" />
-    <Compile Include="Combat\Combat.cs" />
-    <Compile Include="Combat\RollDice.cs" />
+    <Compile Include="PlayerCombat\Attack.cs" />
+    <Compile Include="PlayerCombat\Combat.cs" />
+    <Compile Include="PlayerCombat\RollDice.cs" />
     <Compile Include="CreateLoadPlayer\LoadPlayerFromFile.cs" />
     <Compile Include="CreateLoadPlayer\NewOrOldPlayer.cs" />
     <Compile Include="CreateLoadPlayer\PlayerToFile.cs" />

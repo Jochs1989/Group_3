@@ -34,14 +34,15 @@ namespace ConsoleUI
 
             Console.WriteLine("Type 'Quit' to quit the game\n");
             Console.ForegroundColor = ConsoleColor.White;
-
-            Console.WriteLine("\nYou are currently at {0}.\nPlease Enter (North, South, East, West) to move!\n", Player.CurrentRoom.RoomName);
             #endregion Game Starts
+
+            
 
             //The player is displayed exits points and previously a menu. They have access to either quit, go to the menu, or move to a new location.
             #region Player Decision
             do
             {
+                Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter (North, South, East, West) to move!\n");
                 ShowExitLocations.DisplayExits();                                           // Displays exits for user
                 Console.Write("\nPlease enter what you would like to do: > ");              
                 string input = Console.ReadLine().ToLower();                                
@@ -56,7 +57,7 @@ namespace ConsoleUI
                 }
                 else if (input != "menu")
                 {
-                    PlayerMovement.DisplayMovement(input);                                  // Moves players location
+                    GameCommands.PlayerChoice(input);                              // Moves players location
                 }
                 else
                 {

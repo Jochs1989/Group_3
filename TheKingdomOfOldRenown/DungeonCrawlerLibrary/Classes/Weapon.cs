@@ -17,17 +17,18 @@ namespace DungeonCrawlerLibrary
         public int Damage { get { return _damage; } set { _damage = value; } }
         public int DiceAmount { get { return _diceAmount; } set { _diceAmount = value; } }
         public int DiceSides { get { return _diceSides; } set { _diceSides = value; } }
-        public int Cost { get { return _damage; } set { _damage = value; } }
         // Constructor to assign information gathered
-        public Weapon(int id, string name, string description, int damage, int diceAmount, int diceSides, int cost) : base(id, name, description)
+        public Weapon(int id, string name, string description, int price, bool canEquipt, int damage, int diceAmount, int diceSides) : base(id, name, description, price, canEquipt)
         {
             ID = id;
             Name = name;
             Description = description;
+            Price = price;
+            CanEquipt = canEquipt;
             Damage = damage;
             DiceAmount = diceAmount;
             DiceSides = diceSides;
-            Cost = cost;
+            
         }
     }
 }

@@ -9,18 +9,23 @@ namespace DungeonCrawlerLibrary
     
     public class Combat
     {
-        public void RunCombat(Mob monster, Player player)
+        public void RunCombat()
         {
+            int playerDamage;
+            int mobDamage;
+            Mob monster;
             int playerAttack = RandomNumGenerator.NumberBetween(1, 20);
             int monsterAttack = RandomNumGenerator.NumberBetween(1, 20);
 
-            if(monster.HP != 0 && player.HP != 0)
+            do
             {
                 Console.WriteLine($"You attack with a {player.Equipment.Name} and roll a {playerAttack}");
 
-                if (playerAttack >= monster.AC)
+                if (playerAttack >= monster.a)
                 {
-                    Console.WriteLine($"You hit {monster.Name} for {RollDice.PlayerDiceRoll(player)}");
+                    playerDamage = RollDice.PlayerDiceRoll(player);
+
+                    Console.WriteLine($"You hit {monster.Name} for {playerDamage}");
 
                     if(monster.HP == 0)
                     {
@@ -36,13 +41,20 @@ namespace DungeonCrawlerLibrary
 
                 if(monsterAttack > player.AC)
                 {
-                    Console.WriteLine($"The {monster.Name} hits for {RollDice.MonsterDiceRoll(monster)}");
+                    mobDamage = RollDice.MonsterDiceRoll(monster);
+
+                    Console.WriteLine($"The {monster.Name} hits for {mobDamage}");
+
+                    if(player.HP == 0)
+                    {
+                        // TODO
+                    }
                 }
                 else
                 {
                     Console.WriteLine($"The {monster.Name} Missed!");
                 }
-            }
+            }while (monster.HP != 0 && player.HP != 0);
 
         }
     }
