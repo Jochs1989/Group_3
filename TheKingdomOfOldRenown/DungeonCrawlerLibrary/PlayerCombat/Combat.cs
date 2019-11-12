@@ -13,7 +13,7 @@ namespace DungeonCrawlerLibrary
         {
             int playerDamage;
             int mobDamage;
-            Mob monster;
+            Mob mob;
             Player player;
             int playerAttack = RandomNumGenerator.NumberBetween(1, 20);
             int monsterAttack = RandomNumGenerator.NumberBetween(1, 20);

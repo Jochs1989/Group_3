@@ -1,5 +1,5 @@
-﻿ID ,Name
-1,Bronze Blade
-2,Warped Staff
-3,Worn Bow
-4,Bronze Daggers
+﻿ID ,Name,Description,Price,Can Equipt,Damage Type,Dice Amount,Dice Sides
+1,Bronze Blade,,10,1,slashing,2,4
+2,Warped Staff,,10,1,blunt,1,8
+3,Worn Bow,,10,1,peircing,4,2
+4,Bronze Daggers,,10,1,peircing,4,2

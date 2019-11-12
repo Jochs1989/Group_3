@@ -1,5 +1,5 @@
-﻿ID,Name
-1,Home Beacon
-2,Coin Pouch
-3,Lock Pick
-4,Tinderbox
+﻿ID,Name,Description,Price,can use
+1,Home Beacon,Returns player to the start,10,1
+2,Coin Pouch,Can be sold for 100 gold,,-1
+3,Lock Pick,Can Open specific locked doors,10,1
+4,Tinderbox,Used to start a fire,10,1

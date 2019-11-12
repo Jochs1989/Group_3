@@ -1,5 +1,47 @@
-﻿ID ,Name,Description ,HP ,AC ,Armour
-1,Goblin,a small nibble creature,10,5,3
-2,Zombie,an undead soldier,15,6,6
-3,Spider,a giant spider,20,7,9
-4,Skeleton,an undead soldier,25,8,12
+﻿ID ,Name,Description ,HP ,AC ,AttackDiceSides,Attack Dice Amount,Attack Type,Gold,Experience
+1,Goblin,a small nibble creature,10,5,3,1,blunt,1,5
+2,Goblin,a small nibble creature,15,6,4,1,blunt,2,6
+3,Goblin,a small nibble creature,20,6,5,1,slashing,3,7
+4,Goblin,a small nibble creature,25,7,4,2,piercing,5,8
+5,Zombie,an undead soldier,15,6,5,1,blunt,4,12
+6,Zombie,an undead soldier,20,7,6,1,blunt,5,13
+7,Spider,a giant spider,20,7,7,1,piercing,10,20
+8,Spider,a giant spider,25,8,8,1,piercing,11,21
+9,Skeleton,an undead soldier,25,8,9,1,blunt,15,27
+10,Skeleton,an undead soldier,30,9,10,1,blunt,16,28
+11,Goblin,a small nibble creature,10,5,3,1,blunt,1,5
+12,Goblin,a small nibble creature,15,6,4,1,slashing,2,6
+13,Goblin,a small nibble creature,20,6,5,1,slashing,3,7
+14,Zombie,an undead soldier,25,7,6,1,blunt,6,14
+15,Zombie,an undead soldier,15,6,5,1,blunt,4,12
+16,Zombie,an undead soldier,20,7,6,1,blunt,5,13
+17,Zombie,an undead soldier,30,8,5,2,blunt,7,15
+18,Spider,a giant spider,30,8,8,1,piercing,12,22
+19,Spider,a giant spider,20,7,7,1,piercing,10,20
+20,Skeleton,an undead soldier,30,9,10,1,slashing,16,28
+21,Goblin,a small nibble creature,10,5,3,1,piercing,1,5
+22,Goblin,a small nibble creature,15,6,4,1,blunt,2,6
+23,Zombie,an undead soldier,25,7,6,1,blunt,6,14
+24,Zombie,an undead soldier,15,6,5,1,blunt,4,12
+25,Spider,a giant spider,25,8,8,1,piercing,11,21
+26,Spider,a giant spider,30,8,8,1,piercing,12,22
+27,Spider,a giant spider,20,7,7,1,piercing,10,20
+28,Spider,a giant spider,35,9,6,2,piercing,13,23
+29,Skeleton,an undead soldier,35,9,10,1,slashing,17,27
+30,Skeleton,an undead soldier,25,8,9,1,blunt,15,29
+31,Goblin,a small nibble creature,20,6,5,1,slashing,3,7
+32,Zombie,an undead soldier,20,7,6,1,blunt,5,13
+33,Zombie,an undead soldier,25,7,6,1,blunt,6,14
+34,Spider,a giant spider,25,8,8,1,piercing,11,21
+35,Spider,a giant spider,30,8,8,1,piercing,12,22
+36,Skeleton,an undead soldier,35,9,10,1,slashing,17,29
+37,Skeleton,an undead soldier,25,8,9,1,piercing,15,27
+38,Skeleton,an undead soldier,30,9,10,1,blunt,16,28
+39,Skeleton,an undead soldier,35,9,10,1,slashing,17,29
+40,Skeleton,an undead soldier,40,10,7,2,piercing,20,30
+41,Giant Lord,A Giantatic creature with a huge club ,100,10,20,1,blunt,100,100
+42,Slayer Knight,Completely Armored Knight in Black,80,15,10,2,slashing,100,100
+43,King Spider,A grotesque Spider with venom leaking from is fangs,70,12,6,3,piercing,100,100
+44,Cursed Witch,A medium figure with long white hair ,50,13,4,5,Magic,100,100
+45,Dragon's Guard,A Knight in Dragon trimmed Armor holding a Giant Spear.,120,15,3,10,piercing,200,200
+46,Bronze Dragon,A Dragon with a bronze shimmer to it's scales.,150,15,5,7,Magic,500,500

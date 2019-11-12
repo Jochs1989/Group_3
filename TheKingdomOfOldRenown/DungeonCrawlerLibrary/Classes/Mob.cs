@@ -23,15 +23,15 @@ namespace DungeonCrawlerLibrary
 
         // Constructor to assign information gathered
         #region Constructors
-        public Mob(int id, string name, string description, int attSides, int attAmount, int hp, int ac, int attack, int gold, int xp) : base(hp, ac, attack, gold, xp)
+        public Mob(int id, string name, string description, int hp, int ac, int attSides, int attAmount, string attack, int gold, int xp) : base(hp, ac, attack, gold, xp)
         {
             ID = id;
             Name = name;
-            HP = hp;
             Description = description;
+            HP = hp;
+            AC = ac;
             AttackDiceSides = attSides;
             AttackDiceAmount = attAmount;
-            AC = ac;
             Attack = attack;
             Gold = gold; //TODO random gold mob holds
             XP = xp;
@@ -42,11 +42,11 @@ namespace DungeonCrawlerLibrary
         {
             ID = copy.ID;
             Name = copy.Name;
-            HP = copy.HP;
             Description = copy.Description;
+            HP = copy.HP;
+            AC = copy.AC;
             AttackDiceSides = copy.AttackDiceSides;
             AttackDiceAmount = copy.AttackDiceAmount;
-            AC = copy.AC;
             Attack = copy.Attack;
             Gold = copy.Gold;
             XP = copy.XP;

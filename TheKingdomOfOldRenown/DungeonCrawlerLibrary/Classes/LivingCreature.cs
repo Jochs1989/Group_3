@@ -10,7 +10,7 @@ namespace DungeonCrawlerLibrary
     {
         private int _hp;
         private int _ac;
-        private int _attack;
+        private string _attack;
         private int _gold;
         private int _xp;
 
@@ -19,7 +19,7 @@ namespace DungeonCrawlerLibrary
 
         public int HP { get { return _hp; } set { _hp = value; } }
         public int AC { get { return _ac; } set { _ac = value; } }
-        public int Attack { get { return _attack; } set { _attack = value; } }
+        public string Attack { get { return _attack; } set { _attack = value; } }
         public int Gold { get { return _gold; } set { _gold = value; } }
         public int XP { get { return _xp; } set { _xp = value; } }
 
@@ -27,7 +27,7 @@ namespace DungeonCrawlerLibrary
 
         // Constructor to assign information gathered
         #region Constructors
-        public LivingCreature(int hp, int ac, int attack, int gold, int xp)
+        public LivingCreature(int hp, int ac, string attack, int gold, int xp)
         {
             HP = hp;
             AC = ac;
