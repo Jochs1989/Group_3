@@ -7,20 +7,22 @@ using System.Threading.Tasks;
 namespace DungeonCrawlerLibrary
 {
     // Treasure class to assign information for the Treasures
-    public class Treasure : Item 
+    public class Treasure : InheritItem
     {
         private bool _questItem;
+        private bool _canUse;
 
         public bool QuestItem { get { return _questItem; } set { _questItem = value; } }
+        public bool CanUse { get { return _canUse; } set { _canUse = value; } }
 
         // Constructor to assign information gathered
-        public Treasure(int id, string name, string description, int price, bool canEquipt, bool questItem) : base(id, name, description, price, canEquipt)
+        public Treasure(int id, string name, string description, int price, bool canUse, bool questItem) : base(id, name, description, price)
         {
             ID = id;
             Name = name;
             Description = description;
             Price = price;
-            CanEquipt = canEquipt;
+            CanUse = canUse;
             QuestItem = questItem;
         }
     }

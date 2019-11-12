@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawlerLibrary
 {
-    public class GameCommands
+    public class ActionCommand
     {
         public static void PlayerChoice(string input)
         {
-            string[] arrayInput = input.Split(' ');
+            string[] arrayInput = input.Trim().Split(' ');
 
             string verb = arrayInput[0];
             string noun = arrayInput[1];
@@ -25,6 +25,12 @@ namespace DungeonCrawlerLibrary
                 case "attack":
                     {
                         Combat.RunCombat();
+                        break;
+                    }
+                case "look":
+                    {
+                        //TODO
+                        break;
                     }
             }
         }    

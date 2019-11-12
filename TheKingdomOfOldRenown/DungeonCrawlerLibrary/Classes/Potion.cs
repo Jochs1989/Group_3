@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DungeonCrawlerLibrary
 {
     // Potion class to assign information for the Potions
-    public class Potion : Item 
+    public class Potion : InheritItem
     {
         private int _hpRecovery;
         private int _mpRecovery;
@@ -20,13 +20,12 @@ namespace DungeonCrawlerLibrary
         public int ACUP { get { return _acUP; } set { _acUP = value; } }
 
         // Constructor to assign information gathered
-        public Potion(int hpRecovery, int mpRecovery, int attackUP, int acUP, int id, string name, string description, int price, bool canEquipt) : base(id, name, description, price, canEquipt)
+        public Potion(int hpRecovery, int mpRecovery, int attackUP, int acUP, int id, string name, string description, int price) : base(id, name, description, price)
         {
             ID = id;
             Name = name;
             Description = description;
             Price = price;
-            CanEquipt = canEquipt;
             HPRecovery = hpRecovery;
             MPRecovery = mpRecovery;
             AttackUP = attackUP;

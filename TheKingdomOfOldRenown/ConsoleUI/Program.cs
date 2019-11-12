@@ -13,12 +13,11 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            
             bool exit = false;
             // Here we call our list creation to create all our list from files we have saved in our bin
             // Then we show the user a welcome screen
             // Finally the program goes to player creation and asks the user if they want to create or load a player.
-            
+
             #region Startup
             ListCreation.FromReader();
 
@@ -36,7 +35,7 @@ namespace ConsoleUI
             Console.ForegroundColor = ConsoleColor.White;
             #endregion Game Starts
 
-            
+
 
             //The player is displayed exits points and previously a menu. They have access to either quit, go to the menu, or move to a new location.
             #region Player Decision
@@ -44,8 +43,8 @@ namespace ConsoleUI
             {
                 Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter (North, South, East, West) to move!\n");
                 ShowExitLocations.DisplayExits();                                           // Displays exits for user
-                Console.Write("\nPlease enter what you would like to do: > ");              
-                string input = Console.ReadLine().ToLower();                                
+                Console.Write("\nPlease enter what you would like to do: > ");
+                string input = Console.ReadLine().ToLower();
                 Console.WriteLine("");
                 if (input == "quit")
                 {
@@ -57,7 +56,7 @@ namespace ConsoleUI
                 }
                 else if (input != "menu")
                 {
-                    GameCommands.PlayerChoice(input);                              // Moves players location
+                    ActionCommand.PlayerChoice(input);                              // Moves players location
                 }
                 else
                 {

@@ -9,11 +9,12 @@ namespace DungeonCrawlerLibrary
     
     public class Combat
     {
-        public void RunCombat()
+        public static void RunCombat()
         {
             int playerDamage;
             int mobDamage;
             Mob monster;
+            Player player;
             int playerAttack = RandomNumGenerator.NumberBetween(1, 20);
             int monsterAttack = RandomNumGenerator.NumberBetween(1, 20);
 
@@ -21,7 +22,7 @@ namespace DungeonCrawlerLibrary
             {
                 Console.WriteLine($"You attack with a {player.Equipment.Name} and roll a {playerAttack}");
 
-                if (playerAttack >= monster.a)
+                if (playerAttack >= monster.AC)
                 {
                     playerDamage = RollDice.PlayerDiceRoll(player);
 
@@ -29,7 +30,7 @@ namespace DungeonCrawlerLibrary
 
                     if(monster.HP == 0)
                     {
-                        GameAttributes.mobs.Remove(monster);
+                        Player.CurrentRoom.mobPicked.Remove(monster);
                     }
                 }
                 else
