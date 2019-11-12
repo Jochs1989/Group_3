@@ -11,51 +11,52 @@ namespace DungeonCrawlerLibrary
     {
         public static void RunCombat()
         {
-            int playerDamage;
-            int mobDamage;
-            Mob mob;
-            Player player;
-            int playerAttack = RandomNumGenerator.NumberBetween(1, 20);
-            int monsterAttack = RandomNumGenerator.NumberBetween(1, 20);
+            //int playerDamage;
+            //int mobDamage;
+            //Mob mob;
+            //Player player;
+            //int playerAttack = RandomNumGenerator.NumberBetween(1, 20);
+            //int monsterAttack = RandomNumGenerator.NumberBetween(1, 20);
 
-            do
-            {
-                Console.WriteLine($"You attack with a {player.Equipment.Name} and roll a {playerAttack}");
+            //do
+            //{
+            //    Console.WriteLine($"You attack with a {player.Equipment.Name} and roll a {playerAttack}");
 
-                if (playerAttack >= monster.AC)
-                {
-                    playerDamage = RollDice.PlayerDiceRoll(player);
+            //    if (playerAttack >= mob.AC)
+            //    {
+            //        playerDamage = RollDice.PlayerDiceRoll(player);
 
-                    Console.WriteLine($"You hit {monster.Name} for {playerDamage}");
+            //        Console.WriteLine($"You hit {mob.Name} for {playerDamage}");
 
-                    if(monster.HP == 0)
-                    {
-                        Player.CurrentRoom.mobPicked.Remove(monster);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("You Missed!!!");
-                }
+            //        if (mob.HP == 0)
+            //        {
+            //            Player.CurrentRoom.mobPicked.Remove(mob);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You Missed!!!");
+            //    }
 
-                Console.WriteLine($"The {monster.Name} attacks and rolls a {monsterAttack}");
+            //    Console.WriteLine($"The {mob.Name} attacks and rolls a {monsterAttack}");
 
-                if(monsterAttack > player.AC)
-                {
-                    mobDamage = RollDice.MonsterDiceRoll(monster);
+            //    if (monsterAttack > player.AC)
+            //    {
+            //        mobDamage = RollDice.MonsterDiceRoll(mob);
 
-                    Console.WriteLine($"The {monster.Name} hits for {mobDamage}");
+            //        Console.WriteLine($"The {mob.Name} hits for {mobDamage}");
 
-                    if(player.HP == 0)
-                    {
-                        // TODO
-                    }
-                }
-                else
-                {
-                    Console.WriteLine($"The {monster.Name} Missed!");
-                }
-            }while (monster.HP != 0 && player.HP != 0);
+            //        if (player.HP == 0)
+            //        {
+            //            Console.WriteLine("You have died!");
+            //            goto start;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"The {mob.Name} Missed!");
+            //    }
+            //} while (mob.HP != 0 && player.HP != 0);
 
         }
     }

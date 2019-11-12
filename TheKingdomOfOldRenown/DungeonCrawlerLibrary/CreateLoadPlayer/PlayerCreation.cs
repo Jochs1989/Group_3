@@ -17,7 +17,7 @@ namespace DungeonCrawlerLibrary
             bool validName = false;
             bool validClass = false;
             bool validRace = false;
-            Player newPlayer = new Player();
+            Player newPlayer = new Player("name", "pw", "class", "race", 1, GameAttributes.weapons[0], 0, 0, "attackType", 0, 0);
 
             // Continues to run until the user has made a user name that is not in use. To keep previous users data safe.
             #region User Name Creation
@@ -95,6 +95,47 @@ namespace DungeonCrawlerLibrary
                 }
             }
             #endregion Race Options
+
+            #region Stats
+            switch(newPlayer.PlayerClass)
+            {
+                case "Warrior":
+                    newPlayer.PlayerLevel = 1;
+                    newPlayer.Equipment = GameAttributes.weapons[0];
+                    newPlayer.HP = 100;
+                    newPlayer.AC = 12;
+                    newPlayer.Attack = GameAttributes.weapons[0].Damage;
+                    newPlayer.Gold = 50;
+                    newPlayer.XP = 25;
+                    break;
+                case "Mage":
+                    newPlayer.PlayerLevel = 1;
+                    newPlayer.Equipment = GameAttributes.weapons[1];
+                    newPlayer.HP = 80;
+                    newPlayer.AC = 8;
+                    newPlayer.Attack = GameAttributes.weapons[1].Damage;
+                    newPlayer.Gold = 100;
+                    newPlayer.XP = 75;
+                    break;
+                case "Rogue":
+                    newPlayer.PlayerLevel = 1;
+                    newPlayer.Equipment = GameAttributes.weapons[2];
+                    newPlayer.HP = 90;
+                    newPlayer.AC = 10;
+                    newPlayer.Attack = GameAttributes.weapons[2].Damage;
+                    newPlayer.Gold = 75;
+                    newPlayer.XP = 50;
+                    break;
+                case "Paladin":
+                    newPlayer.PlayerLevel = 1;
+                    newPlayer.Equipment = GameAttributes.weapons[3];
+                    newPlayer.HP = 110;
+                    newPlayer.AC = 14;
+                    newPlayer.Attack = GameAttributes.weapons[3].Damage;
+                    newPlayer.Gold = 25;
+                    newPlayer.XP = 0;
+                    break;
+            }
 
             //After all player creations requirements are met the object is passed to another class to save the data to a CSV file.
             PlayerToFile.SavePlayerData(newPlayer);
