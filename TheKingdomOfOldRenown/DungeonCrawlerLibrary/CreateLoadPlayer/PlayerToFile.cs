@@ -23,7 +23,7 @@ namespace DungeonCrawlerLibrary
                 outputFile.WriteLine(player.PlayerClass);
                 outputFile.WriteLine(player.PlayerRace);
                 outputFile.WriteLine(player.PlayerLevel);
-                outputFile.WriteLine(player.Equipment);
+                outputFile.WriteLine(player.Equipment.ID);
                 outputFile.WriteLine(player.HP);
                 outputFile.WriteLine(player.AC);
                 outputFile.WriteLine(player.Attack);

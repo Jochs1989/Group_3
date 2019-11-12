@@ -17,7 +17,7 @@ namespace DungeonCrawlerLibrary
             bool validName = false;
             bool validClass = false;
             bool validRace = false;
-            Player newPlayer = new Player("name", "pw", "class", "race", 1, GameAttributes.weapons[0], 0, 0, "attackType", 0, 0);
+            Player newPlayer = new Player("name", "pw", "class", "race", 1, 1, 0, 0, "attackType", 0, 0);
 
             // Continues to run until the user has made a user name that is not in use. To keep previous users data safe.
             #region User Name Creation
@@ -69,7 +69,7 @@ namespace DungeonCrawlerLibrary
                     {
                         case "Warrior":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.weapons[0];
+                            newPlayer.Equipment.ID = GameAttributes.weapons[0].ID;
                             newPlayer.HP = 100;
                             newPlayer.AC = 12;
                             newPlayer.Attack = GameAttributes.weapons[0].Damage;
@@ -78,7 +78,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Mage":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.weapons[1];
+                            newPlayer.Equipment.ID = GameAttributes.weapons[1].ID;
                             newPlayer.HP = 80;
                             newPlayer.AC = 8;
                             newPlayer.Attack = GameAttributes.weapons[1].Damage;
@@ -87,7 +87,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Rogue":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.weapons[2];
+                            newPlayer.Equipment.ID = GameAttributes.weapons[2].ID;
                             newPlayer.HP = 90;
                             newPlayer.AC = 10;
                             newPlayer.Attack = GameAttributes.weapons[2].Damage;
@@ -96,7 +96,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Paladin":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.weapons[3];
+                            newPlayer.Equipment.ID = GameAttributes.weapons[3].ID;
                             newPlayer.HP = 110;
                             newPlayer.AC = 14;
                             newPlayer.Attack = GameAttributes.weapons[3].Damage;
