@@ -13,7 +13,7 @@ namespace DungeonCrawlerLibrary
         // Also the program sends back the information for use in identifying if the user knows the password.
         public static Player LoadPlayer(string username)
         {
-            Player oldplayer = new Player();
+            Player oldplayer = new Player("name", "pw", "class", "race", 1, GameAttributes.weapons[0], 0, 0, "attackType", 0, 0);
             if (File.Exists($"{username}.csv"))                                                 // Sees if the file exists
             {
                 using (StreamReader fileReader = new StreamReader($"{username}.csv"))           // Opens the file
@@ -22,12 +22,10 @@ namespace DungeonCrawlerLibrary
 
                     while (!fileReader.EndOfStream)
                     {
-                        string userName = fileReader.ReadLine();
-                        string password = fileReader.ReadLine();
-                        string playerClass = fileReader.ReadLine();
-                        string playerRace = fileReader.ReadLine();
+                        var line = fileReader.ReadLine();
+                        var values = line.Split(',');
 
-                        return oldplayer = new Player(userName, password, playerClass, playerRace); // returns file informaiton for password varification.
+                        return oldplayer = new Player(values[0], values[1], values[2], values[3], int.Parse(values[4]), values[5], int.Parse(values[6]), int.Parse(values[7]), values[8], int.Parse(values[9]), int.Parse(values[10])); // returns file informaiton for password varification.
                     }
                     return oldplayer;
                 }

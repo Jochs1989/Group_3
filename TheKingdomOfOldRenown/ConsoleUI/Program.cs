@@ -17,7 +17,7 @@ namespace ConsoleUI
             // Here we call our list creation to create all our list from files we have saved in our bin
             // Then we show the user a welcome screen
             // Finally the program goes to player creation and asks the user if they want to create or load a player.
-
+            
             #region Startup
             ListCreation.FromReader();
 
