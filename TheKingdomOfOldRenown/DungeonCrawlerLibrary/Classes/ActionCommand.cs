@@ -10,10 +10,19 @@ namespace DungeonCrawlerLibrary
     {
         public static void PlayerChoice(string input)
         {
-            string[] arrayInput = input.Trim().Split(' ');
+            string[] arrayInput = input.Trim().Split(null);
 
             string verb = arrayInput[0];
-            string noun = arrayInput[1];
+            string noun;
+            if (arrayInput.Length == 2)
+            {
+                 noun = arrayInput[1];
+            }
+            else
+            {
+                noun = "";
+            }
+
 
             switch (verb.ToLower())
             {
@@ -29,7 +38,7 @@ namespace DungeonCrawlerLibrary
                     }
                 case "look":
                     {
-                        //TODO
+                        Observe.ObserveArea();
                         break;
                     }
             }

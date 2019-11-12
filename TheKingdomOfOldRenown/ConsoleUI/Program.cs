@@ -52,7 +52,7 @@ namespace ConsoleUI
                 }
                 else if (input == "menu")
                 {
-                    MenuOptions.DisplayMenu();                                              // Displays menu for user
+                    MenuOptions.DisplayMenu();                                      // Displays menu for user
                 }
                 else if (input != "menu")
                 {
