@@ -13,13 +13,15 @@ namespace DungeonCrawlerLibrary
         private int _diceAmount;
         private int _diceSides;
         private bool _canEquipt;
+        private int _beginningWeapon;
 
         public string Damage { get { return _damage; } set { _damage = value; } }
         public int DiceAmount { get { return _diceAmount; } set { _diceAmount = value; } }
         public int DiceSides { get { return _diceSides; } set { _diceSides = value; } }
         public bool CanEquipt { get { return _canEquipt; } set { _canEquipt = value; } }
+        public int BeginningWeapon { get { return _beginningWeapon; } set { _beginningWeapon = value; } }
         // Constructor to assign information gathered
-        public Weapon(int id, string name, string description, int price, bool canEquipt, string damage, int diceAmount, int diceSides) : base(id, name, description, price)
+        public Weapon(int id, string name, string description, int price, bool canEquipt, string damage, int diceAmount, int diceSides, int firstWeapon) : base(id, name, description, price)
         {
             ID = id;
             Name = name;
@@ -29,6 +31,7 @@ namespace DungeonCrawlerLibrary
             Damage = damage;
             DiceAmount = diceAmount;
             DiceSides = diceSides;
+            BeginningWeapon = firstWeapon;
             
         }
     }
