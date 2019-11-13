@@ -23,7 +23,7 @@ namespace ConsoleUI
 
             Console.WriteLine("Welcome to The Kingdom Of Old Renown!"); //ToDo better welcome screeen!
 
-            NewOrOldPlayer.PlayerCreateOrLoad(); //Todo Delete old player profiles
+            Player player = NewOrOldPlayer.PlayerCreateOrLoad(); //Todo Delete old player profiles
             #endregion Startup
 
             // Here the game gives the user starting options along with where they are located and what direction they would want to move.
@@ -41,7 +41,7 @@ namespace ConsoleUI
             #region Player Decision
             do
             {
-                Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter (North, South, East, West) to move!\n");
+                Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter (move, attack, look) then (North, South, East, West) to move!\n (Example: move north)\n");
                 ShowExitLocations.DisplayExits();                                           // Displays exits for user
                 Console.Write("\nPlease enter what you would like to do: > ");
                 string input = Console.ReadLine().ToLower();
@@ -56,7 +56,7 @@ namespace ConsoleUI
                 }
                 else if (input != "menu")
                 {
-                    ActionCommand.PlayerChoice(input);                              // Moves players location
+                    ActionCommand.PlayerChoice(input, player);                              // Moves players location
                 }
                 else
                 {

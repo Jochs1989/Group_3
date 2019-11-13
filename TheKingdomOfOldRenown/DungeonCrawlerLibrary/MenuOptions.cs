@@ -52,6 +52,14 @@ namespace DungeonCrawlerLibrary
                         }
                         break;
                     }
+                    case "mobs":
+                    {
+                            foreach (Mob name in GameAttributes.mobs)
+                            {
+                                Console.WriteLine(name.Name);
+                            }
+                            break;
+                        }
                     case "potions":
                     {
                         foreach (Potion name in GameAttributes.potions)

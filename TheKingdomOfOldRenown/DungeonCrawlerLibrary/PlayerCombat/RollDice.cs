@@ -8,12 +8,11 @@ namespace DungeonCrawlerLibrary
 {
     public class RollDice
     {
-        public static int PlayerDiceRoll()
+        public static int PlayerDiceRoll(Player player)
         {
-            Player player = LoadPlayerFromFile.LoadPlayer("jeff");
             int sum = 0;
-            int diceAmount = player.Equipment.;
-            int diceSides = Player._player.Equipment.DiceSides;
+            int diceAmount = player.Equipment.DiceAmount;
+            int diceSides = player.Equipment.DiceSides;
             
 
             for (int i = 0; i < diceAmount; i++)
@@ -24,12 +23,12 @@ namespace DungeonCrawlerLibrary
             return sum;
         }
 
-        public static int MonsterDiceRoll()
+        public static int MonsterDiceRoll(Mob mob)
         {
 
             int sum = 0;
-            int diceAmount = Mob._mob.AttackDiceAmount;
-            int diceSides = Mob._mob.AttackDiceSides;
+            int diceAmount = mob.AttackDiceAmount;
+            int diceSides = mob.AttackDiceSides;
 
 
             for (int i = 0; i < diceAmount; i++)

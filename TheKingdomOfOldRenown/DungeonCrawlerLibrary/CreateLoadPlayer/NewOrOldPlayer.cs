@@ -9,9 +9,10 @@ namespace DungeonCrawlerLibrary
 {
     public class NewOrOldPlayer
     {
-        public static void PlayerCreateOrLoad()
+        public static Player PlayerCreateOrLoad()
         {
             // Class object to store player information along with variables used for varification.
+            Player oldUser = new Player("name", "pw", "class", "race", 0, 0, 0, 0, "attackType", 0, 0);
             string userInput;
             string userName;
             string password;
@@ -28,8 +29,8 @@ namespace DungeonCrawlerLibrary
                 // Here the users input is used as validation for what the program needs to do, either create or load. In this case its for creation.
                 if (userInput.ToLower() == "create")
                 {
-                    PlayerCreation.CreatePlayer();
-                    exit = true;
+                    oldUser = PlayerCreation.CreatePlayer(oldUser);
+                    return oldUser;
                 }
                 // Here that same user input is used to load a character.
                 else if (userInput.ToLower() == "load")
@@ -38,7 +39,7 @@ namespace DungeonCrawlerLibrary
                     Console.Write("\nPlease enter User Name: > ");
 
                     userName = Console.ReadLine();
-                    Player oldUser = LoadPlayerFromFile.LoadPlayer(userName);
+                    oldUser = LoadPlayerFromFile.LoadPlayer(userName);
 
                     // Here if the players user name is valid it will then ask the user for their password, and as long as their password is correct the program will move on
                     if (File.Exists($"{userName}.csv"))
@@ -48,7 +49,7 @@ namespace DungeonCrawlerLibrary
 
                         if (password == oldUser.Password) 
                         {
-                            exit = true;
+                            return oldUser;
                         }
                         else
                         {
@@ -59,8 +60,9 @@ namespace DungeonCrawlerLibrary
                 else
                 {
                     Console.WriteLine("\nInvalid Input! Please type create or load!\n");
-                }
+                } 
             }
+            return oldUser;
         }
     }
 }

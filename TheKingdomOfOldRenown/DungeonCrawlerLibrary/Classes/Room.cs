@@ -53,7 +53,6 @@ namespace DungeonCrawlerLibrary
                     int rolledMob = RandomNumGenerator.NumberBetween(0, 9);
                     MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
                     mobPicked.Add(MobRoll);
-
                 }
                 else if (mobRoll < 2)
                 {
@@ -81,11 +80,15 @@ namespace DungeonCrawlerLibrary
                 }
                 else if (mobRoll < 6)
                 {
-                    mobPicked.Add(GameAttributes.mobs[44]);
+                    int rolledMob = RandomNumGenerator.NumberBetween(44, 44);
+                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(MobRoll);
                 }
                 else
                 {
-                    mobPicked.Add(GameAttributes.mobs[45]);
+                    int rolledMob = RandomNumGenerator.NumberBetween(45, 45);
+                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(MobRoll);
                 }
             }
             

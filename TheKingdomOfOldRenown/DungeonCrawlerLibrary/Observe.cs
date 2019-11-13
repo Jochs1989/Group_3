@@ -10,7 +10,18 @@ namespace DungeonCrawlerLibrary
     {
         public static void ObserveArea()
         {
-            
+            if(Player.CurrentRoom.MobRoll != null)
+            {
+                for (int i = 0; i < Player.CurrentRoom.mobPicked.Count; i++)
+                {
+                    Console.WriteLine($"You see a {Player.CurrentRoom.mobPicked[i].Name}");
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine("You don't see anything");
+            }
         }
     }
 }

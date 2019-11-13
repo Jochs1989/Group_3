@@ -22,8 +22,8 @@ namespace DungeonCrawlerLibrary
         public string PlayerClass { get { return _playerClass; } set { _playerClass = value; } }
         public string PlayerRace { get { return _playerRace; } set { _playerRace = value; } }
         public int PlayerLevel { get { return _playerLevel; } set { _playerLevel = value; } }
-        public static Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
         public Weapon Equipment { get { return _equipment; } set { _equipment = value; } }
+        public static Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
 
         // Constructor to assign information gathered
         public Player(string playerName, string password, string playerClass, string race, int playerLevel, int equipment, int hp, int ac, string attack, int gold, int xp)

@@ -17,18 +17,10 @@ namespace DungeonCrawlerLibrary
                 StreamWriter outputFile;
 
                 outputFile = File.CreateText($"{player.PlayerName}.csv");
-                outputFile.WriteLine("Character");
-                outputFile.WriteLine(player.PlayerName);
-                outputFile.WriteLine(player.Password);
-                outputFile.WriteLine(player.PlayerClass);
-                outputFile.WriteLine(player.PlayerRace);
-                outputFile.WriteLine(player.PlayerLevel);
-                outputFile.WriteLine(player.Equipment.ID);
-                outputFile.WriteLine(player.HP);
-                outputFile.WriteLine(player.AC);
-                outputFile.WriteLine(player.Attack);
-                outputFile.WriteLine(player.Gold);
-                outputFile.WriteLine(player.XP);
+
+                outputFile.WriteLine($"{player.PlayerName.Trim()},{player.Password.Trim()},{player.PlayerClass.Trim()},{player.PlayerRace.Trim()}," +
+                    $"{player.PlayerLevel},{player.Equipment.ID},{player.HP},{player.AC},{player.Attack},{player.Gold},{player.XP}");
+
                 outputFile.Close();
             }
 

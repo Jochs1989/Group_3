@@ -8,15 +8,15 @@ namespace DungeonCrawlerLibrary
 {
     public class ActionCommand
     {
-        public static void PlayerChoice(string input)
+        public static void PlayerChoice(string input, Player player)
         {
             string[] arrayInput = input.Trim().Split(null);
 
-            string verb = arrayInput[0];
+            string verb = arrayInput[0].ToLower() ;
             string noun;
             if (arrayInput.Length == 2)
             {
-                 noun = arrayInput[1];
+                 noun = arrayInput[1].ToLower();
             }
             else
             {
@@ -24,7 +24,7 @@ namespace DungeonCrawlerLibrary
             }
 
 
-            switch (verb.ToLower())
+            switch (verb)
             {
                 case "move":
                     {
@@ -33,7 +33,7 @@ namespace DungeonCrawlerLibrary
                     }
                 case "attack":
                     {
-                        Combat.RunCombat();
+                        Combat.RunCombat(player);
                         break;
                     }
                 case "look":

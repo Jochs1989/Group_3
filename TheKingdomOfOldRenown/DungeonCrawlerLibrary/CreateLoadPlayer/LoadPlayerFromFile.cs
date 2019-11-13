@@ -18,8 +18,6 @@ namespace DungeonCrawlerLibrary
             {
                 using (StreamReader fileReader = new StreamReader($"{username}.csv"))           // Opens the file
                 {
-                    fileReader.ReadLine();
-
                     while (!fileReader.EndOfStream)
                     {
                         var line = fileReader.ReadLine();

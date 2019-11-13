@@ -9,7 +9,7 @@ namespace DungeonCrawlerLibrary
 {
     public class PlayerCreation
     {
-        public static void CreatePlayer()
+        public static Player CreatePlayer(Player newPlayer)
         {
             // variables and objects for validation and player creation.
             string password = null;
@@ -17,7 +17,6 @@ namespace DungeonCrawlerLibrary
             bool validName = false;
             bool validClass = false;
             bool validRace = false;
-            Player newPlayer = new Player("name", "pw", "class", "race", 1, 1, 0, 0, "attackType", 0, 0);
 
             // Continues to run until the user has made a user name that is not in use. To keep previous users data safe.
             #region User Name Creation
@@ -37,6 +36,7 @@ namespace DungeonCrawlerLibrary
                     Console.WriteLine("\nUser Name already Exists!\n");
                 }
             }
+
             #endregion
 
             // Continues to run until the user meets all requirements allocated for a password.
@@ -139,12 +139,16 @@ namespace DungeonCrawlerLibrary
             #endregion Race Options
             
 
-            //After all player creations requirements are met the object is passed to another class to save the data to a CSV file.
+            // After all player creations requirements are met the object is passed to another class to save the data to a CSV file.
             PlayerToFile.SavePlayerData(newPlayer);
+            // Them the player must login to their new account.
+            Console.Write("\nPlease enter your User Name to start: > ");
+            return newPlayer = LoadPlayerFromFile.LoadPlayer(Console.ReadLine());
         }
 
         // Used to validate whether the user met all password requirements. The Any searched though all characters and identifies if any of the 
         // characters meet the requirement allocated.
+        #region password validation
         public static string PasswordValidator(string password)
         {
 
@@ -173,8 +177,9 @@ namespace DungeonCrawlerLibrary
 
             return password;
         }
+        #endregion password validation
 
 
-        
+
     }
 }
