@@ -69,7 +69,7 @@ namespace DungeonCrawlerLibrary
                     {
                         case "Warrior":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[0].ID - 1;
+                            newPlayer.Equipment.ID = GameAttributes.weapons[0].BeginningWeapon;
                             newPlayer.HP = 100;
                             newPlayer.AC = 12;
                             newPlayer.Attack = GameAttributes.weapons[0].Damage;
@@ -78,7 +78,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Mage":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[1].ID - 1;
+                            newPlayer.Equipment.ID = GameAttributes.weapons[1].BeginningWeapon;
                             newPlayer.HP = 80;
                             newPlayer.AC = 8;
                             newPlayer.Attack = GameAttributes.weapons[1].Damage;
@@ -87,7 +87,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Rogue":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[2].ID - 1;
+                            newPlayer.Equipment.ID = GameAttributes.weapons[2].BeginningWeapon;
                             newPlayer.HP = 90;
                             newPlayer.AC = 10;
                             newPlayer.Attack = GameAttributes.weapons[2].Damage;
@@ -96,7 +96,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Paladin":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[3].ID - 1;
+                            newPlayer.Equipment.ID = GameAttributes.weapons[3].BeginningWeapon;
                             newPlayer.HP = 110;
                             newPlayer.AC = 14;
                             newPlayer.Attack = GameAttributes.weapons[3].Damage;
