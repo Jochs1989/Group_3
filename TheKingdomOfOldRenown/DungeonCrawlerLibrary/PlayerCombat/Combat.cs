@@ -62,6 +62,7 @@ namespace DungeonCrawlerLibrary
                             if (player.HP < 0)
                             {
                                 Console.WriteLine("You have died!");
+                                LoadPlayerFromFile.LoadPlayer(player.PlayerName);
                                 exit = true;
                             }
                         }

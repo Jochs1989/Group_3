@@ -41,7 +41,7 @@ namespace ConsoleUI
             #region Player Decision
             do
             {
-                Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter (move, attack, look) then (North, South, East, West) to move!\n (Example: move north)\n");
+                Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter an action (move, attack, look) then a directive (North, goblin, desk) !\n (Example: move north)\n");
                 ShowExitLocations.DisplayExits();                                           // Displays exits for user
                 Console.Write("\nPlease enter what you would like to do: > ");
                 string input = Console.ReadLine().ToLower();

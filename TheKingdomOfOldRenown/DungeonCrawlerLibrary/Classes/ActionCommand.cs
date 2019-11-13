@@ -38,7 +38,17 @@ namespace DungeonCrawlerLibrary
                     }
                 case "look":
                     {
-                        Observe.ObserveArea();
+                        Observe.ObserveArea(noun);
+                        break;
+                    }
+                case "save":
+                    {
+                        SavePlayer.Saving(player);
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("You can enter (move, attack, look, save)");
                         break;
                     }
             }
