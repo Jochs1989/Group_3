@@ -33,7 +33,7 @@ namespace DungeonCrawlerLibrary
             AttackDiceSides = attSides;
             AttackDiceAmount = attAmount;
             Attack = attack;
-            Gold = gold; //TODO random gold mob holds
+            Gold = gold; 
             XP = xp;
         }
 

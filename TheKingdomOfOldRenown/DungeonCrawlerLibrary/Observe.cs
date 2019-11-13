@@ -10,10 +10,7 @@ namespace DungeonCrawlerLibrary
     {
         public static void ObserveArea()
         {
-            foreach (Room name in GameAttributes.rooms)
-            {
-                Console.WriteLine(name.RoomName);
-            }
+            
         }
     }
 }

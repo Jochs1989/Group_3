@@ -81,13 +81,11 @@ namespace DungeonCrawlerLibrary
                 }
                 else if (mobRoll < 6)
                 {
-                    int rolledMob = RandomNumGenerator.NumberBetween(44,44);
-                    mobPicked.Add(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(GameAttributes.mobs[44]);
                 }
                 else
                 {
-                    int rolledMob = RandomNumGenerator.NumberBetween(45,45);
-                    mobPicked.Add(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(GameAttributes.mobs[45]);
                 }
             }
             

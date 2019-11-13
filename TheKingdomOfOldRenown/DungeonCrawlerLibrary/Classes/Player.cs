@@ -34,8 +34,8 @@ namespace DungeonCrawlerLibrary
             PlayerClass = playerClass;
             PlayerRace = race;
             PlayerLevel = playerLevel;
-            CurrentRoom = GameAttributes.rooms[0];
             Equipment = GameAttributes.weapons[equipment];
+            CurrentRoom = GameAttributes.rooms[0];
             HP = hp;
             AC = ac;
             Attack = attack;
