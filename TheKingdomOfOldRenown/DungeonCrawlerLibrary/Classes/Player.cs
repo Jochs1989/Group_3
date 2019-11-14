@@ -43,5 +43,10 @@ namespace DungeonCrawlerLibrary
             XP = xp;
 
         }
+
+        public static void AddPlayerXP(Player player, Mob mob)
+        {
+            player.XP += mob.XP;
+        }
     }
 }

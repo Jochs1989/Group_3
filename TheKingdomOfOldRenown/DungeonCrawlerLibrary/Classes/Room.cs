@@ -23,7 +23,7 @@ namespace DungeonCrawlerLibrary
         public int South { get { return _south; } set { _south = value; } }
         public int East { get { return _east; } set { _east = value; } }
         public int West { get { return _west; } set { _west = value; } }
-        public Mob MobRoll { get { return _mobs; } set { _mobs = value; } }
+        public Mob CurrentMob { get { return _mobs; } set { _mobs = value; } }
         public List<Mob> mobPicked = new List<Mob>();
 
         // Constructor to assign incase no information is available
@@ -51,44 +51,44 @@ namespace DungeonCrawlerLibrary
                 if (mobRoll < 1)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(0, 9);
-                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
-                    mobPicked.Add(MobRoll);
+                    CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(CurrentMob);
                 }
                 else if (mobRoll < 2)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(10, 19);
-                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
-                    mobPicked.Add(MobRoll);
+                    CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(CurrentMob);
                 }
                 else if (mobRoll < 3)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(20, 29);
-                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
-                    mobPicked.Add(MobRoll);
+                    CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(CurrentMob);
                 }
                 else if (mobRoll < 4)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(30, 39);
-                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
-                    mobPicked.Add(MobRoll);
+                    CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(CurrentMob);
                 }
                 else if (mobRoll < 5)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(40, 43);
-                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
-                    mobPicked.Add(MobRoll);
+                    CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(CurrentMob);
                 }
                 else if (mobRoll < 6)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(44, 44);
-                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
-                    mobPicked.Add(MobRoll);
+                    CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(CurrentMob);
                 }
                 else
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(45, 45);
-                    MobRoll = new Mob(GameAttributes.mobs[rolledMob]);
-                    mobPicked.Add(MobRoll);
+                    CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
+                    mobPicked.Add(CurrentMob);
                 }
             }
             

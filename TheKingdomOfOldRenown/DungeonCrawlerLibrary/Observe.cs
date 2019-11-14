@@ -14,7 +14,7 @@ namespace DungeonCrawlerLibrary
 
             if (noun == Player.CurrentRoom.mobPicked[0].Name.ToLower())
             {
-                if (Player.CurrentRoom.MobRoll != null)
+                if (Player.CurrentRoom.CurrentMob != null)
                 {
                     Console.WriteLine($"You see {Player.CurrentRoom.mobPicked[0].Description}");
                 }
