@@ -28,7 +28,7 @@ namespace DungeonCrawlerLibrary
         public static Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
 
         // Constructor to assign information gathered
-        public Player(string playerName, string password, string playerClass, string race, int playerLevel, Weapon equipment, int hp, int ac, int gold, int xp, bool isDead)
+        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int equipment, int hp, int ac, int gold, int xp, bool isDead)
             : base(hp, ac, gold, xp, isDead)
         {
             PlayerName = playerName;
@@ -36,7 +36,7 @@ namespace DungeonCrawlerLibrary
             PlayerClass = playerClass;
             PlayerRace = race;
             PlayerLevel = playerLevel;
-            Equipment = equipment;
+            Equipment = GameAttributes.PlayerWeaponByID(equipment);
             CurrentRoom = GameAttributes.rooms[0];
             HP = hp;
             AC = ac;

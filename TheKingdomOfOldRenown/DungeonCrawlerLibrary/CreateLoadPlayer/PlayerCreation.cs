@@ -69,7 +69,7 @@ namespace DungeonCrawlerLibrary
                     {
                         case "Warrior":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(1);
+                            newPlayer.Equipment.ID = GameAttributes.PlayerWeaponByID(0).ID;
                             newPlayer.HP = 100;
                             newPlayer.AC = 12;
                             newPlayer.Gold = 50;
@@ -78,7 +78,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Mage":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(2);
+                            newPlayer.Equipment.ID = GameAttributes.PlayerWeaponByID(2).ID;
                             newPlayer.HP = 80;
                             newPlayer.AC = 8;
                             newPlayer.Gold = 100;
@@ -87,7 +87,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Rogue":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(3);
+                            newPlayer.Equipment.ID = GameAttributes.PlayerWeaponByID(3).ID;
                             newPlayer.HP = 90;
                             newPlayer.AC = 10;
                             newPlayer.Gold = 75;
@@ -96,7 +96,7 @@ namespace DungeonCrawlerLibrary
                             break;
                         case "Paladin":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(4);
+                            newPlayer.Equipment.ID = GameAttributes.PlayerWeaponByID(4).ID;
                             newPlayer.HP = 110;
                             newPlayer.AC = 14;
                             newPlayer.Gold = 25;
