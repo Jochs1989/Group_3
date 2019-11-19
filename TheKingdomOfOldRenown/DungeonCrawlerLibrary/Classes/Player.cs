@@ -16,6 +16,8 @@ namespace DungeonCrawlerLibrary
         private int _playerLevel;
         private static Room _currentroom;
         private Weapon _equipment;
+        public static Player player;
+
 
         public string PlayerName { get { return _playerName; } set { _playerName = value; } }
         public string Password { get { return _password; } set { _password = value; } }
@@ -26,22 +28,21 @@ namespace DungeonCrawlerLibrary
         public static Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
 
         // Constructor to assign information gathered
-        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int equipment, int hp, int ac, string attack, int gold, int xp)
-            : base(hp, ac, attack, gold, xp)
+        public Player(string playerName, string password, string playerClass, string race, int playerLevel, Weapon equipment, int hp, int ac, int gold, int xp, bool isDead)
+            : base(hp, ac, gold, xp, isDead)
         {
             PlayerName = playerName;
             Password = password;
             PlayerClass = playerClass;
             PlayerRace = race;
             PlayerLevel = playerLevel;
-            Equipment = GameAttributes.weapons[equipment];
+            Equipment = equipment;
             CurrentRoom = GameAttributes.rooms[0];
             HP = hp;
             AC = ac;
-            Attack = attack;
             Gold = gold;
             XP = xp;
-
+            IsDead = isDead;
         }
 
         public static void AddPlayerXP(Player player, Mob mob)

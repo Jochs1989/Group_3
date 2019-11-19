@@ -21,7 +21,7 @@ namespace DungeonCrawlerLibrary
             do
             {
                 //checks to make sure the mob isn't dead
-                if (mob)
+                if (mob.IsDead == false)
                 {
                     // rolls the players attack
                     int playerAttack = RandomNumGenerator.NumberBetween(1, 20);
@@ -37,9 +37,7 @@ namespace DungeonCrawlerLibrary
 
                         if (mob.HP <= 0)
                         {
-                            Console.WriteLine($"{player.XP}");
-                            Console.WriteLine($"{Player.AddPlayerXP(player, mob)}");
-                            mob.Remove(mob);
+                            mob.IsDead = true;
                             exit = true;
                         }
                     }
@@ -48,7 +46,7 @@ namespace DungeonCrawlerLibrary
                         Console.WriteLine("You Missed!!!");
                     }
                     // mobs turn to attack if it is still alive, rolls the mobs attacks and continues combat until the player or mob dies
-                    if (mob.Any())
+                    if (mob.IsDead == false)
                     {
                         int monsterAttack = RandomNumGenerator.NumberBetween(1, 20);
                         

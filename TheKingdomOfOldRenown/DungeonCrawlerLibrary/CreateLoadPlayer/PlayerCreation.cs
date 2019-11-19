@@ -69,39 +69,39 @@ namespace DungeonCrawlerLibrary
                     {
                         case "Warrior":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[0].BeginningWeapon;
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(1);
                             newPlayer.HP = 100;
                             newPlayer.AC = 12;
-                            newPlayer.Attack = GameAttributes.weapons[0].Damage;
                             newPlayer.Gold = 50;
                             newPlayer.XP = 25;
+                            newPlayer.IsDead = false;
                             break;
                         case "Mage":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[1].BeginningWeapon;
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(2);
                             newPlayer.HP = 80;
                             newPlayer.AC = 8;
-                            newPlayer.Attack = GameAttributes.weapons[1].Damage;
                             newPlayer.Gold = 100;
                             newPlayer.XP = 75;
+                            newPlayer.IsDead = false;
                             break;
                         case "Rogue":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[2].BeginningWeapon;
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(3);
                             newPlayer.HP = 90;
                             newPlayer.AC = 10;
-                            newPlayer.Attack = GameAttributes.weapons[2].Damage;
                             newPlayer.Gold = 75;
                             newPlayer.XP = 50;
+                            newPlayer.IsDead = false;
                             break;
                         case "Paladin":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[3].BeginningWeapon;
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(4);
                             newPlayer.HP = 110;
                             newPlayer.AC = 14;
-                            newPlayer.Attack = GameAttributes.weapons[3].Damage;
                             newPlayer.Gold = 25;
                             newPlayer.XP = 0;
+                            newPlayer.IsDead = false;
                             break;
                         default:
                             Console.WriteLine("Invalid input");

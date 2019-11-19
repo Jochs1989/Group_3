@@ -12,7 +12,7 @@ namespace DungeonCrawlerLibrary
         public static Player PlayerCreateOrLoad()
         {
             // Class object to store player information along with variables used for varification.
-            Player oldUser = new Player("name", "pw", "class", "race", 0, 0, 0, 0, "attackType", 0, 0);
+            Player oldUser = new Player("name", "pw", "class", "race", 0, 0, 0, 0, 0, 0, false);
             string userInput;
             string userName;
             string password;
