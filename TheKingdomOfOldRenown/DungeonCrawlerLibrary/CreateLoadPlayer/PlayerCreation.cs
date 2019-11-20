@@ -73,7 +73,7 @@ namespace DungeonCrawlerLibrary
                             newPlayer.HP = 100;
                             newPlayer.AC = 12;
                             newPlayer.Gold = 50;
-                            newPlayer.XP = 25;
+                            newPlayer.XP = 125;
                             newPlayer.IsDead = false;
                             break;
                         case "Mage":
@@ -82,7 +82,7 @@ namespace DungeonCrawlerLibrary
                             newPlayer.HP = 80;
                             newPlayer.AC = 8;
                             newPlayer.Gold = 100;
-                            newPlayer.XP = 75;
+                            newPlayer.XP = 175;
                             newPlayer.IsDead = false;
                             break;
                         case "Rogue":
@@ -91,7 +91,7 @@ namespace DungeonCrawlerLibrary
                             newPlayer.HP = 90;
                             newPlayer.AC = 10;
                             newPlayer.Gold = 75;
-                            newPlayer.XP = 50;
+                            newPlayer.XP = 150;
                             newPlayer.IsDead = false;
                             break;
                         case "Paladin":
@@ -100,7 +100,7 @@ namespace DungeonCrawlerLibrary
                             newPlayer.HP = 110;
                             newPlayer.AC = 14;
                             newPlayer.Gold = 25;
-                            newPlayer.XP = 0;
+                            newPlayer.XP = 100;
                             newPlayer.IsDead = false;
                             break;
                         default:

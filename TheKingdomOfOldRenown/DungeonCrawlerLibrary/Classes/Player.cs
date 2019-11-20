@@ -48,6 +48,8 @@ namespace DungeonCrawlerLibrary
         public static void AddPlayerXP(Player player, Mob mob)
         {
             player.XP += mob.XP;
+
+            player.PlayerLevel = player.XP / 100;
         }
     }
 }

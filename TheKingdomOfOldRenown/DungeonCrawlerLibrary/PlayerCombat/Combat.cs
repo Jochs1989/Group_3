@@ -38,6 +38,7 @@ namespace DungeonCrawlerLibrary
                         if (mob.HP <= 0)
                         {
                             mob.IsDead = true;
+                            Player.AddPlayerXP(player, mob);
                             exit = true;
                         }
                     }
