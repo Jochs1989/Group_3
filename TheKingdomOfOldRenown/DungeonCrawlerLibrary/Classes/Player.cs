@@ -51,5 +51,10 @@ namespace DungeonCrawlerLibrary
 
             player.PlayerLevel = player.XP / 100;
         }
+
+        public static void AddPlayerGold(Player player, Mob mob)
+        {
+            player.Gold += mob.Gold;
+        }
     }
 }

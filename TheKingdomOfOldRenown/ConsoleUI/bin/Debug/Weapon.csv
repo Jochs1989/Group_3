@@ -1,5 +1,21 @@
 ID ,Name,Description,Price,Can Equipt,Damage Type,Dice Amount,Dice Sides
-1,Bronze Blade,A Short sword,10,TRUE,slashing,2,5
-2,Warped Staff,A 2 handed staff,10,TRUE,blunt,1,8
-3,Bronze Daggers,2 Short daggers,10,TRUE,peircing,2,4
-4,Bronze Hammer,A 2 handed Hammer,10,TRUE,blunt,1,10
+200,Bronze Blade,A Bronze Short sword,10,TRUE,slashing,2,5
+201,Warped Staff,A 2 handed staff made from regular wood,10,TRUE,blunt,1,8
+203,Bronze Daggers,2 Bronze Short daggers,10,TRUE,peircing,2,4
+204,Bronze Hammer,A Bronze made 2 handed Hammer,10,TRUE,blunt,1,10
+205,Silver Blade,A Silver Short sword,100,TRUE,slashing,2,6
+206,Oak Staff,A 2 handed staff made from an Oak Tree,100,TRUE,blunt,1,10
+207,Silver Dagger,2 Silver Short daggers,100,TRUE,peircing,2,5
+208,Silver Hammer,A Silver made 2 handed Hammer,100,TRUE,blunt,1,12
+209,Gold blade,A Gold Short sword,150,TRUE,slashing,2,7
+210,Yew Staff,A 2 handed staff made from a Yew Tree,150,TRUE,blunt,1,12
+211,Gold Daggers,2 Gold Short daggers,150,TRUE,peircing,4,3
+212,Gold Hammer,A Gold made 2 handed Hammer,150,TRUE,blunt,1,14
+213,Crystal Blade,A Crystal Short sword,200,TRUE,slashing,2,5
+214,Crystal Staff,A 2 handed staff made from Crystal,200,TRUE,blunt,1,8
+215,Crystal Daggers,2 Crystal Short daggers,200,TRUE,peircing,2,4
+216,Crystal Hammer,A Crystal made 2 handed Hammer,200,TRUE,blunt,1,10
+217,Dragon Blade,A Dragon Short sword,300,TRUE,slashing,2,5
+218,Dragon Staff,A 2 handed staff made from a Dragon,300,TRUE,blunt,1,8
+219,Dragon Daggers,2 Dragon Short daggers,300,TRUE,peircing,2,4
+220,Dragon Hammer,A Dragon made 2 handed Hammer,300,TRUE,blunt,1,10
