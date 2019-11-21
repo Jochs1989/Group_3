@@ -1,5 +1,5 @@
-﻿ID,Name,Description,Price,can use
-1,Home Beacon,Returns player to the start,10,TRUE
-2,Coin Pouch,Can be sold for 100 gold,10,FALSE
-3,Lock Pick,Can Open specific locked doors,10,TRUE
-4,Tinderbox,Used to start a fire,10,TRUE
+ID	Name	Description	Price	can use
+401	Home Beacon	Returns player to the start	10	TRUE
+402	Coin Pouch	Can be sold for 100 gold	10	FALSE
+403	Lock Pick	Can Open specific locked doors	10	TRUE
+404	Tinderbox	Used to start a fire	10	TRUE

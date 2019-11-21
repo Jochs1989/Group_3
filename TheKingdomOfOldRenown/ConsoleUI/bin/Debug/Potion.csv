@@ -1,9 +1,9 @@
 ﻿ID,Name,Description,Price,HPRecovery,MPRecovery,AttackUP,ACUP
-1,Minor Health Potion,TODO,5,50,0,0,0
-2,Major Health Potion,TODO,10,100,0,0,0
-3,Minor Mana Potion,TODO,5,0,50,0,0
-4,Major Mana Potion,TODO,10,0,100,0,0
-5,Minor Elixer,TODO,10,50,50,0,0
-6,Major Elixer,TODO,20,100,100,0,0
-7,Attack UP Potion,TODO,0,0,0,5,0
-8,AC UP Potion,TODO,0,0,0,0,5
+301,Minor Health Potion,TODO,5,50,0,0,0
+302,Major Health Potion,TODO,10,100,0,0,0
+303,Minor Mana Potion,TODO,5,0,50,0,0
+304,Major Mana Potion,TODO,10,0,100,0,0
+305,Minor Elixer,TODO,10,50,50,0,0
+306,Major Elixer,TODO,20,100,100,0,0
+307,Attack UP Potion,TODO,0,0,0,5,0
+308,AC UP Potion,TODO,0,0,0,0,5

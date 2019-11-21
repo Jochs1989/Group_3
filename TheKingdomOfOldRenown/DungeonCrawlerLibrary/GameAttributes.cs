@@ -25,5 +25,18 @@ namespace DungeonCrawlerLibrary
         {
             return weapons.SingleOrDefault(x => x.ID == id);
         }
+        
+        public static Potion PlayerPotionByID(int id)
+        {
+            return potions.SingleOrDefault(x => x.ID == id);
+        }
+        public static Treasure PlayerTreasureByID(int id)
+        {
+            return treasures.SingleOrDefault(x => x.ID == id);
+        }
+        public static Item PlayerItemByID(int id)
+        {
+            return items.SingleOrDefault(x => x.ID == id);
+        }
     }
 }
