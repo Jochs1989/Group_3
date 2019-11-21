@@ -1,9 +1,56 @@
-"ID	",RoomName ,North,South ,East ,West,MobChance
-1,Entrance,1,-1,-1,-1,-1
-2,Room1,2,0,4,-1,0
-3,Room2,-1,1,3,-1,1
-4,Room3,-1,4,6,2,2
-5,Room4,3,-1,5,1,3
-6,Room5,6,-1,4,-1,4
-7,Room6,7,5,3,-1,5
-8,Room7,-1,6,-1,-1,6
+"ID	",RoomName ,North,South ,East ,West,UP,DOWN,MobChance
+1,Pasture,1,-1,-1,-1,-1,-1,-1
+2,City Road,2,0,4,5,-1,-1,0
+3,City Road,8,1,3,6,-1,-1,0
+4,Blacksmith's house,-1,4,6,2,-1,-1,2
+5,Alchemist's house,3,-1,5,1,-1,-1,3
+6,Weapon Dealer,6,-1,4,-1,-1,-1,4
+7,Gambler,7,5,3,-1,-1,-1,5
+9,Castle Gate,-1,6,-1,-1,-1,-1,6
+10,Grand Foyer,-1,-1,10,24,-1,-1,
+11,Right Wing Hall,-1,-1,11,9,-1,-1,
+12,Right Wing Hall,12,-1,16,10,-1,-1,
+13,Right Wing Hall,13,11,17,-1,-1,-1,
+14,Right Wing Hall,14,12,18,-1,-1,-1,
+15,Right Wing Hall,15,13,19,-1,-1,-1,
+16,Right Wing Hall,-1,14,20,21,-1,-1,
+17,South East Stairway,-1,-1,11,-1,37,-1,
+18,Drawing Room,-1,-1,12,-1,-1,-1,
+19,Dinning Hall,19,-1,13,-1,-1,-1,
+20,Kitchen,-1,18,14,-1,-1,-1,
+21,North East Stairway,-1,-1,15,-1,36,-1,
+22,Great Hall,-1,-1,22,15,-1,-1,
+23,Great Hall,-1,-1,23,21,-1,-1,
+24,Great Hall,-1,-1,24,22,-1,-1,
+25,Left Wing Hall,-1,25,30,23,-1,-1,
+26,Left Wing Hall,24,26,-1,31,-1,-1,
+27,Left Wing Hall,25,27,-1,32,-1,-1,
+28,Left Wing Hall,26,28,-1,33,-1,-1,
+29,Left Wing Hall,27,-1,29,34,-1,-1,
+30,Left Wing Hall,-1,-1,9,28,-1,-1,
+31,North West Stairway,-1,-1,28,-1,36,-1,
+32,Billard Room,-1,32,25,-1,-1,-1,
+33,Music Room,31,33,26,-1,-1,-1,
+34,Cloak Room,32,-1,27,-1,-1,-1,
+35,South West Stairway,-1,-1,28,-1,35,-1,
+36,South West Stairway,45,-1,39,-1,-1,34,
+37,North East Stairway,-1,42,-1,48,-1,20,
+38,South East Stairway,44,-1,-1,41,-1,16,
+39,North West Stairway,-1,47,50,-1,-1,30,
+40,South Hallway Landing,-1,-1,40,35,-1,-1,
+41,South Hallway Landing,51,-1,41,39,-1,-1,
+42,South Hallway Landing,-1,-1,37,40,-1,-1,
+43,East Hallway Landing,36,43,-1,-1,-1,-1,
+44,East Hallway Landing,42,44,52,-1,-1,-1,
+45,East Hallway Landing,43,37,-1,-1,-1,-1,
+46,West Hallway Landing,46,35,-1,-1,-1,-1,
+47,West Hallway Landing,47,45,53,-1,-1,-1,
+48,West Hallway Landing,38,46,-1,-1,-1,-1,
+49,North Hallway Landing,-1,-1,36,49,-1,-1,
+50,North Hallway Landing,-1,54,48,50,-1,-1,
+51,North Hallway Landing,-1,-1,49,38,-1,-1,
+52,Dark Room,55,40,-1,-1,-1,-1,
+53,Dark Room,-1,-1,43,55,-1,-1,
+54,Dark Room,-1,-1,55,46,-1,-1,
+55,Dark Room,49,55,-1,-1,-1,-1,
+56,Treasure Room,54,51,52,53,-1,-1,
