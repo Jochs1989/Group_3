@@ -64,6 +64,7 @@ namespace DungeonCrawlerLibrary
                 // This accesses our enum class and converts data inside to a string so that we can use our enums as comparision to user's entry.
                 if (playerClass == Classes.Warrior.ToString() || playerClass == Classes.Mage.ToString() || playerClass == Classes.Rogue.ToString() || playerClass == Classes.Paladin.ToString())
                 {
+                    // After the class is chosen, the player gets stats based off class chosen.
                     newPlayer.PlayerClass = playerClass;
                     switch (playerClass)
                     {

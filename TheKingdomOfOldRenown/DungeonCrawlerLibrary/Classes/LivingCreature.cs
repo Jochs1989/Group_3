@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawlerLibrary
 {
+   // Inhertited class for anything that is living in the game //TODO add NPC's
    public class LivingCreature
     {
         private int _hp;

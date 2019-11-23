@@ -16,7 +16,6 @@ namespace DungeonCrawlerLibrary
             int mobDamage;
             Mob mob = player.CurrentRoom.CurrentMob;
 
-            
             // Keeps the do while going as long as the mob/player hasn't died.
             do
             {
@@ -37,7 +36,7 @@ namespace DungeonCrawlerLibrary
                             Console.WriteLine($"You hit {mob.Name} for {playerDamage} damage!");
                             mob.HP -= playerDamage;
                             Console.WriteLine($"The {mob.Name} has {mob.HP} HP!");
-
+                            // Once mob dies all items are automatically given to player //TODO add a display of what the player gained (xp, gold, items, etc)
                             if (mob.HP <= 0)
                             {
                                 Console.ForegroundColor = ConsoleColor.Cyan;
@@ -45,10 +44,7 @@ namespace DungeonCrawlerLibrary
                                 player.Gold += mob.Gold;
                                 player.XP += mob.XP;
                                 player.PlayerLevel = player.XP / 100;
-                                foreach (InheritItem items in mob.ItemDrop)             //TODO fix inventory does not add because mob.itemdrop is not populating correctly
-                                {
-                                    player.Inventory.Add(items);
-                                }
+                                player.Inventory = mob.ItemDrop;
                                 exit = true;
                                 Console.ForegroundColor = ConsoleColor.White;
                             }

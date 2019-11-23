@@ -35,7 +35,7 @@ namespace ConsoleUI
             Console.ForegroundColor = ConsoleColor.White;
             #endregion Game Starts
 
-            //The player is displayed exits points and previously a menu. They have access to either quit, go to the menu, or move to a new location.
+            //The player is displayed exits points. They have access to either quit, go to the menu, or make a decision.
             #region Player Decision
             do
             {

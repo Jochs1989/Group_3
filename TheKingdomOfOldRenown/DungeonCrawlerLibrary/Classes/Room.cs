@@ -43,7 +43,7 @@ namespace DungeonCrawlerLibrary
             West = west;
             Up = up;
             Down = down;
-
+            // Allows for the mob to be randomly generated.
             if (mobRoll > -1)
             {
                 if (mobRoll < 1)

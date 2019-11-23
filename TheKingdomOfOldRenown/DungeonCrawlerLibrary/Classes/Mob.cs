@@ -65,8 +65,8 @@ namespace DungeonCrawlerLibrary
             ItemDrop = copy.ItemDrop;
         }
         #endregion
-
-        public List<InheritItem> RandomItemsDropped(int itemDrop) //TODO Need to figure out how to save randomly generated item to mob for player to find.
+        //TODO Need to figure out how to save randomly generated item to mob for player to find.
+        public List<InheritItem> RandomItemsDropped(int itemDrop) 
         {
             List<InheritItem> newItemList = new List<InheritItem>();
             switch (itemDrop)

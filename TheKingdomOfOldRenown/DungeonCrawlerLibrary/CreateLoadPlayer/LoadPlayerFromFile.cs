@@ -24,10 +24,12 @@ namespace DungeonCrawlerLibrary
                         var line = playerfileReader.ReadLine();
                         var values = line.Split(',');
 
-                        oldplayer = new Player(values[0], values[1], values[2], values[3], int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), int.Parse(values[7]), int.Parse(values[8]), int.Parse(values[9]), bool.Parse(values[10])); // returns file informaiton for password varification.
+                        // returns file informaiton for password varification.
+                        oldplayer = new Player(values[0], values[1], values[2], values[3], int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), int.Parse(values[7]),
+                            int.Parse(values[8]), int.Parse(values[9]), bool.Parse(values[10]));                   
                     }
 
-                    using (StreamReader weapontFileReader = new StreamReader($"{username}Weapon.csv"))
+                    using (StreamReader weapontFileReader = new StreamReader($"{username}Weapon.csv"))      // Loads in the users weapon. This makes it so that if there are any changes to the weapon the changes are saved.
                     {
                         while(!weapontFileReader.EndOfStream)
                         {
@@ -36,7 +38,7 @@ namespace DungeonCrawlerLibrary
                             oldplayer.Equipment = new Weapon(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), bool.Parse(values[4]), values[5], int.Parse(values[6]), int.Parse(values[7]), int.Parse(values[8]));
                         }
 
-                        using (StreamReader inventoryFileReader = new StreamReader($"{username}Inventory.csv"))
+                        using (StreamReader inventoryFileReader = new StreamReader($"{username}Inventory.csv")) // TODO Still need to figure out how to make the inventory work.
                         {
                             while (!inventoryFileReader.EndOfStream)
                             {

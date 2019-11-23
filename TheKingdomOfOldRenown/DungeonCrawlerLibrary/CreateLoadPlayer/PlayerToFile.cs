@@ -23,14 +23,13 @@ namespace DungeonCrawlerLibrary
 
                 outputFile.Close();
             }
-
             catch
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error loading player!");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-
+            // Makes a file for the users equipped weapon.
             try
             {
                 StreamWriter outputFile;
@@ -42,14 +41,13 @@ namespace DungeonCrawlerLibrary
 
                 outputFile.Close();
             }
-
             catch
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("EError loading Equipment!");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-
+            // Makes a file for the users inventory.
             try
             {
                 StreamWriter outputFile;
@@ -63,7 +61,6 @@ namespace DungeonCrawlerLibrary
 
                 outputFile.Close();
             }
-
             catch
             {
                 Console.ForegroundColor = ConsoleColor.Red;

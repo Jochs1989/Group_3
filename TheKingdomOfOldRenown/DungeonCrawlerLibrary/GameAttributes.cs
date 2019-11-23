@@ -20,7 +20,7 @@ namespace DungeonCrawlerLibrary
         public static List<Menu> options = new List<Menu>();
 
         #endregion
-
+        // All methods are used to search for specific elements in the lists based of ID.
         public static Weapon PlayerWeaponByID(int id)
         {
             return weapons.SingleOrDefault(x => x.ID == id);

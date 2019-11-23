@@ -49,7 +49,7 @@ namespace DungeonCrawlerLibrary
             IsDead = isDead;
             Inventory = new List<InheritItem>();
         }
-
+        // Allows the player to gain xp after killing a mob //TODO figure out how to add stat increases after player level increases.
         public static void AddPlayerXP(Player player, Mob mob)
         {
             player.XP += mob.XP;

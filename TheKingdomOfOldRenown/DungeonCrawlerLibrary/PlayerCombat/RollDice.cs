@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawlerLibrary
 {
+    // Class is used to simulate rolls for games, combat and events
     public class RollDice
     {
         public static int PlayerDiceRoll(Player player)

@@ -8,8 +8,10 @@ namespace DungeonCrawlerLibrary
 {
     public class ActionCommand
     {
+        // Method that takes the users input and splits it allowing for more precise player control
         public static void PlayerChoice(string input, Player player)
         {
+            // Splits the users entry into 2 words, then save the first half to verb second have to noun for use.
             string[] arrayInput = input.Trim().Split(null);
 
             string verb = arrayInput[0].ToLower() ;
@@ -23,7 +25,7 @@ namespace DungeonCrawlerLibrary
                 noun = "";
             }
 
-
+            // Where the verb dictates the action and the noun gets past to the new class method for precise decisions.
             switch (verb)
             {
                 case "move":

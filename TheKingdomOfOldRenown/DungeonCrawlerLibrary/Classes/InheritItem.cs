@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawlerLibrary
 {
+    // Trying to use the class inheritance to also create a list with just the inherited details for use of creating an inventory.
     public class InheritItem
     {
 

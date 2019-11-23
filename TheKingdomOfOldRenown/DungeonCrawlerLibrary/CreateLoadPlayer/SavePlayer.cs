@@ -24,14 +24,13 @@ namespace DungeonCrawlerLibrary
 
                 outputFile.Close();
             }
-
             catch
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Player did not save!");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-
+            // Saves the users weapon in case of changes to the weapon.
             try
             {
                 StreamWriter outputFile;
@@ -43,14 +42,13 @@ namespace DungeonCrawlerLibrary
 
                 outputFile.Close();
             }
-
             catch
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Equipment did not save!");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-
+            //TODO figure out how to save the inventory correctly if is is possible.
             try
             {
                 StreamWriter outputFile;
@@ -59,7 +57,7 @@ namespace DungeonCrawlerLibrary
 
                 for (int i = 0; i < player.Inventory.Count; i++)
                 {
-                    outputFile.WriteLine($"{player.Inventory[i].ID},{player.Inventory[i].Name},{player.Inventory[i].Description},{player.Inventory[i].Price}");
+                    outputFile.Write($"{player.Inventory[i].ID},{player.Inventory[i].Name},{player.Inventory[i].Description},{player.Inventory[i].Price}"); 
                 }
 
                 outputFile.Close();
