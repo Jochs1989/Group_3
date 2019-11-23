@@ -1,5 +1,5 @@
 ID ,Name,Description,Price,Can Equipt,Damage Type,Dice Amount,Dice Sides,Upgrades
-201,Light sword,A Short sword,10,TRUE,slashing,1,4,0
+201,Light sword,A Short sword.,10,TRUE,slashing,1,4,0
 202,Warped Staff,A 2 handed staff,10,TRUE,blunt,1,4,0
 203,Dagger,A Short dagger,10,TRUE,slashing,1,4,0
 204,Light Hammer,A 2 handed Hammer,10,TRUE,blunt,1,4,0

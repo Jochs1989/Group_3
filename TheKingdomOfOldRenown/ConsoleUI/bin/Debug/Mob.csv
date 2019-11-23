@@ -39,8 +39,8 @@
 138,UndeadKnight,an undead soldier covered in armor,88,15,8,3,slashing,4,FALSE
 139,Minotaur,A human looking creature with a buill head,90,14,9,2,blunt,4,FALSE
 140,Incubus,A beautiful looking humanoid figure,84,15,5,4,piercing,4,FALSE
-141,GiantLord,A Giantatic creature with a huge club ,150,13,30,1,blunt,5,FALSE
-142,KingSlayer,A Unarmored man with an enormous 2 handed sword,150,15,10,3,slashing,5,FALSE
-143,CursedWitch,A medium figure with long white hair ,150,14,5,6,Magic,5,FALSE
-144,DragonsGuard,A Knight in Dragon trimmed Armor.,150,16,6,5,piercing,5,FALSE
-145,GoldDragon,A Dragon with a bronze shimmer to it's scales.,250,13,12,5,Magic,6,FALSE
+141,GiantLord,A Giantatic creature with a huge club ,150,13,30,1,blunt,6,FALSE
+142,KingSlayer,A Unarmored man with an enormous 2 handed sword,150,15,10,3,slashing,7,FALSE
+143,CursedWitch,A medium figure with long white hair ,150,14,5,6,Magic,8,FALSE
+144,DragonsGuard,A Knight in Dragon trimmed Armor.,150,16,6,5,piercing,9,FALSE
+145,GoldDragon,A Dragon with a bronze shimmer to it's scales.,250,13,12,5,Magic,10,FALSE

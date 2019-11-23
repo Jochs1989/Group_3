@@ -102,13 +102,10 @@ namespace DungeonCrawlerLibrary
                     newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
                     newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
                     return newItemList;
-                case 6:
+                default:
                     newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)));
                     newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
                     newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
-                    return newItemList;
-                default:
-                    newItemList.Add(GameAttributes.items[0]);
                     return newItemList;
             }
         }
