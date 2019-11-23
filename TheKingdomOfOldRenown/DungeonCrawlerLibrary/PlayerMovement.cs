@@ -67,12 +67,39 @@ namespace DungeonCrawlerLibrary
                     Console.WriteLine("\nYou are looking at a wall\n");
                 }
             }
+            #endregion Player Movement West
+
+            #region Player Movement Up
+            else if (input.ToLower() == "up")
+            {
+                if (Player.CurrentRoom.Up != -1)
+                {
+                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.Up];
+                }
+                else
+                {
+                    Console.WriteLine("\nYou are looking at a wall\n");
+                }
+            }
+            #endregion Player Movement Up
+
+            #region Player Movement Down
+            else if (input.ToLower() == "down")
+            {
+                if (Player.CurrentRoom.Down != -1)
+                {
+                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.Down];
+                }
+                else
+                {
+                    Console.WriteLine("\nYou are looking at a wall\n");
+                }
+            }
             else
             {
                 Console.WriteLine("\nNot a Valid Direction\n");
             }
-            #endregion Player Movement West
-
+            #endregion Player Movement Down
             return input;
         }
     }

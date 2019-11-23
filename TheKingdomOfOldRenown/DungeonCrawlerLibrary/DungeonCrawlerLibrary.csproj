@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Classes\ActionCommand.cs" />
     <Compile Include="Classes\InheritItem.cs" />
+    <Compile Include="Classes\PlayerInventory.cs" />
     <Compile Include="Classes\RandomNumGenerator.cs" />
     <Compile Include="CreateLoadPlayer\SavePlayer.cs" />
     <Compile Include="Observe.cs" />

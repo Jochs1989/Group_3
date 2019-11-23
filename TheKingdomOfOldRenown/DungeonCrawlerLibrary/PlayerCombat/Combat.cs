@@ -38,7 +38,12 @@ namespace DungeonCrawlerLibrary
                         if (mob.HP <= 0)
                         {
                             mob.IsDead = true;
-                            Player.AddPlayerXP(player, mob);
+                            player.Gold += mob.Gold;
+                            player.XP += mob.XP;
+                            foreach(List<object> items in mob.ItemDrop)
+                            {
+                                Console.WriteLine($"Dropped{items}");
+                            }
                             exit = true;
                         }
                     }
@@ -88,6 +93,11 @@ namespace DungeonCrawlerLibrary
                 
 
             } while (exit == false);
+
+        }
+
+        public static void CombatResults()
+        {
 
         }
     }

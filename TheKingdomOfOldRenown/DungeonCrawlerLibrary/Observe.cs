@@ -10,13 +10,13 @@ namespace DungeonCrawlerLibrary
     {
         public static void ObserveArea(string noun)
         {
-            Console.WriteLine($"You see a {Player.CurrentRoom.mobPicked[0].Name}");
+            Console.WriteLine($"You see a {Player.CurrentRoom.CurrentMob.Name}");
 
-            if (noun == Player.CurrentRoom.mobPicked[0].Name.ToLower())
+            if (noun == Player.CurrentRoom.CurrentMob.Name.ToLower())
             {
                 if (Player.CurrentRoom.CurrentMob != null)
                 {
-                    Console.WriteLine($"You see {Player.CurrentRoom.mobPicked[0].Description}");
+                    Console.WriteLine($"You see {Player.CurrentRoom.CurrentMob.Description}");
                 }
                 else
                 {

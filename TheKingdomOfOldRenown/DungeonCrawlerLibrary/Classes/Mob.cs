@@ -15,7 +15,9 @@ namespace DungeonCrawlerLibrary
         private int _attSides;
         private int _attAmount;
         private string _attType;
-        private int _itemDrop;
+        private int _gold;
+        private int _xp;
+        private List<int> _itemDrop;
 
 
         public int ID { get{ return _id; } set { _id = value; } }
@@ -24,11 +26,13 @@ namespace DungeonCrawlerLibrary
         public int AttackDiceSides { get { return _attSides; } set { _attSides = value; } }
         public int AttackDiceAmount { get { return _attAmount; } set { _attAmount = value; } }
         public string AttackType { get { return _attType; } set { _attType = value; } }
+        public int Gold { get { return _gold; } set { _gold = value; } }
+        public int XP { get { return _xp; } set { _xp = value; } }
         public List<int> ItemDrop { get { return _itemDrop; } set { _itemDrop = value; } }
 
         // Constructor to assign information gathered
         #region Constructors
-        public Mob(int id, string name, string description, int hp, int ac, int attSides, int attAmount, string attType, int gold, int xp, bool isDead, int itemDrop) : base(hp, ac, gold, xp, isDead)
+        public Mob(int id, string name, string description, int hp, int ac, int attSides, int attAmount, string attType, int mobRating,  bool isDead) : base(hp, ac, isDead)
         {
             ID = id;
             Name = name;
@@ -38,87 +42,14 @@ namespace DungeonCrawlerLibrary
             AttackDiceSides = attSides;
             AttackDiceAmount = attAmount;
             AttackType = attType;
-            Gold = RandomGold(gold); 
-            XP = RandomXP(xp);
+            Gold = RandomGold(mobRating); 
+            XP = RandomXP(mobRating);
             IsDead = isDead;
-            ItemDrop = RandomItemsDropped(itemDrop);
-        }
-
-        private List<int> RandomItemsDropped(int itemDrop)
-        {
-            List<int> newItemList;
-            switch (itemDrop)
-            {
-                case 0:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(1, 20)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(1, 20)).ID);
-                case 1:
-                    return newGold = RandomNumGenerator.NumberBetween(20, 30);
-                case 2:
-                    return newGold = RandomNumGenerator.NumberBetween(30, 50);
-                case 3:
-                    return newGold = RandomNumGenerator.NumberBetween(50, 75);
-                case 4:
-                    return newGold = RandomNumGenerator.NumberBetween(100, 150);
-                case 5:
-                    return newGold = RandomNumGenerator.NumberBetween(750, 750);
-                case 6:
-                    return newGold = RandomNumGenerator.NumberBetween(1500, 1500);
-                default:
-                    return 0;
-            }
-        }
-
-        private int RandomGold(int gold)
-        {
-            int newGold;
-            switch (gold)
-            {
-                case 0:
-                    return newGold = RandomNumGenerator.NumberBetween(10, 20);
-                case 1:
-                    return newGold = RandomNumGenerator.NumberBetween(20, 30);
-                case 2:
-                    return newGold = RandomNumGenerator.NumberBetween(30, 50);
-                case 3:
-                    return newGold = RandomNumGenerator.NumberBetween(50, 75);
-                case 4:
-                    return newGold = RandomNumGenerator.NumberBetween(100, 150);
-                case 5:
-                    return newGold = RandomNumGenerator.NumberBetween(750, 750);
-                case 6:
-                    return newGold = RandomNumGenerator.NumberBetween(1500, 1500);
-                default:
-                    return 0;
-            }
-        }
-
-        private int RandomXP(int xp)
-        {
-            int newXP;
-            switch (xp)
-            {
-                case 0:
-                    return newXP = RandomNumGenerator.NumberBetween(1, 10);
-                case 1:
-                    return newXP = RandomNumGenerator.NumberBetween(5, 15);
-                case 2:
-                    return newXP = RandomNumGenerator.NumberBetween(15, 25);
-                case 3:
-                    return newXP = RandomNumGenerator.NumberBetween(25, 35);
-                case 4:
-                    return newXP = RandomNumGenerator.NumberBetween(35, 50);
-                case 5:
-                    return newXP = RandomNumGenerator.NumberBetween(100, 100);
-                case 6:
-                    return newXP = RandomNumGenerator.NumberBetween(200, 200);
-                default:
-                    return 0;
-            }
+            ItemDrop = RandomItemsDropped(mobRating);
         }
 
         // This is how you make a copy of a mob!!!
-        public Mob(Mob copy) : base(copy.HP, copy.AC, copy.Gold, copy.XP, copy.IsDead)
+        public Mob(Mob copy) : base(copy.HP, copy.AC, copy.IsDead)
         {
             ID = copy.ID;
             Name = copy.Name;
@@ -131,7 +62,101 @@ namespace DungeonCrawlerLibrary
             Gold = copy.Gold;
             XP = copy.XP;
             IsDead = copy.IsDead;
+            ItemDrop = copy.ItemDrop;
         }
         #endregion
+
+        private List<int> RandomItemsDropped(int itemDrop)
+        {
+            List<int> newItemList = new List<int>();
+            switch (itemDrop)
+            {
+                case 0:
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 413)).ID);
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 340)).ID);
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(201, 220)).ID);
+                    return newItemList;
+                    
+                case 1:
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 415)).ID);
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 350)).ID);
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(212, 236)).ID);
+                    return newItemList;
+                case 2:
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 416)).ID);
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 360)).ID);
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(212, 252)).ID);
+                    return newItemList;
+                case 3:
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 419)).ID);
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(330, 364)).ID);
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(231, 252)).ID);
+                    return newItemList;
+                case 4:
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)).ID);
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)).ID);
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)).ID);
+                    return newItemList;
+                case 5:
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(420, 421)).ID);
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)).ID);
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)).ID);
+                    return newItemList;
+                case 6:
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)).ID);
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)).ID);
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)).ID);
+                    return newItemList;
+                default:
+                    newItemList.Add(0);
+                    return newItemList;
+            }
+        }
+
+        private int RandomGold(int gold)
+        {
+            switch (gold)
+            {
+                case 0:
+                    return RandomNumGenerator.NumberBetween(10, 20);
+                case 1:
+                    return RandomNumGenerator.NumberBetween(20, 30);
+                case 2:
+                    return RandomNumGenerator.NumberBetween(30, 50);
+                case 3:
+                    return RandomNumGenerator.NumberBetween(50, 75);
+                case 4:
+                    return RandomNumGenerator.NumberBetween(100, 150);
+                case 5:
+                    return RandomNumGenerator.NumberBetween(750, 750);
+                case 6:
+                    return RandomNumGenerator.NumberBetween(1500, 1500);
+                default:
+                    return 0;
+            }
+        }
+
+        private int RandomXP(int xp)
+        {
+            switch (xp)
+            {
+                case 0:
+                    return RandomNumGenerator.NumberBetween(1, 10);
+                case 1:
+                    return RandomNumGenerator.NumberBetween(5, 15);
+                case 2:
+                    return RandomNumGenerator.NumberBetween(15, 25);
+                case 3:
+                    return RandomNumGenerator.NumberBetween(25, 35);
+                case 4:
+                    return RandomNumGenerator.NumberBetween(35, 50);
+                case 5:
+                    return RandomNumGenerator.NumberBetween(100, 100);
+                case 6:
+                    return RandomNumGenerator.NumberBetween(200, 200);
+                default:
+                    return 0;
+            }
+        }
     }
 }

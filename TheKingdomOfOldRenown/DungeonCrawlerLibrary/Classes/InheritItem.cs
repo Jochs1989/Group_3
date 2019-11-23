@@ -18,8 +18,7 @@ namespace DungeonCrawlerLibrary
         public string Description { get { return _description; } set { _description = value; } }
         public int Price { get { return _price; } set { _price = value; } }
 
-        // Constructor to assign information gathered
-        public InheritItem(int id, string name, string description, int price)
+        public InheritItem(int id, string name, string description, int price )
         {
             ID = id;
             Name = name;

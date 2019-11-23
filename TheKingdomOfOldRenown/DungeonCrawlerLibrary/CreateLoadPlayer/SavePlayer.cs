@@ -29,6 +29,23 @@ namespace DungeonCrawlerLibrary
             {
                 Console.WriteLine("File Read Error");
             }
+
+            try
+            {
+                StreamWriter outputFile;
+
+                outputFile = File.CreateText($"{player.PlayerName}Weapon.csv");
+
+                outputFile.WriteLine($"{player.Equipment.ID}, {player.Equipment.Name}, {player.Equipment.Description}, {player.Equipment.Price}," +
+                    $" {player.Equipment.CanEquip}, {player.Equipment.Damage}, {player.Equipment.DiceAmount}, {player.Equipment.DiceSides}, {player.Equipment.Upgrades}");
+
+                outputFile.Close();
+            }
+
+            catch
+            {
+                Console.WriteLine("File Read Error");
+            }
         }
     }
 }

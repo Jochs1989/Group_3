@@ -30,12 +30,20 @@ namespace DungeonCrawlerLibrary
             {
                 exits.Add("West");
             }
+            if (Player.CurrentRoom.Up != -1)
+            {
+                exits.Add("Stairway Up");
+            }
+            if (Player.CurrentRoom.Down != -1)
+            {
+                exits.Add("Stairway Down");
+            }
 
             Console.Write("You see Exits: ");
 
             for (int index = 0; index < exits.Count; index++)
             {
-                Console.Write(exits[index]);
+                Console.Write($"( {exits[index]} | )");
             }
 
         }

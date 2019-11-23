@@ -14,9 +14,10 @@ namespace DungeonCrawlerLibrary
         private string _playerClass;
         private string _playerRace;
         private int _playerLevel;
+        private int _gold;
+        private int _xp;
         private static Room _currentroom;
         private Weapon _equipment;
-        public static Player player;
 
 
         public string PlayerName { get { return _playerName; } set { _playerName = value; } }
@@ -24,25 +25,28 @@ namespace DungeonCrawlerLibrary
         public string PlayerClass { get { return _playerClass; } set { _playerClass = value; } }
         public string PlayerRace { get { return _playerRace; } set { _playerRace = value; } }
         public int PlayerLevel { get { return _playerLevel; } set { _playerLevel = value; } }
+        public int Gold { get { return _gold; } set { _gold = value; } }
+        public int XP { get { return _xp; } set { _xp = value; } }
         public Weapon Equipment { get { return _equipment; } set { _equipment = value; } }
         public static Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
+        public static List<int> Inventory { get; set; }
 
         // Constructor to assign information gathered
-        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int equipment, int hp, int ac, int gold, int xp, bool isDead)
-            : base(hp, ac, gold, xp, isDead)
+        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int hp, int ac, int gold, int xp, bool isDead)
+            : base(hp, ac, isDead)
         {
             PlayerName = playerName;
             Password = password;
             PlayerClass = playerClass;
             PlayerRace = race;
             PlayerLevel = playerLevel;
-            Equipment = GameAttributes.PlayerWeaponByID(equipment);
             CurrentRoom = GameAttributes.rooms[0];
             HP = hp;
             AC = ac;
             Gold = gold;
             XP = xp;
             IsDead = isDead;
+            Inventory = new List<int>();
         }
 
         public static void AddPlayerXP(Player player, Mob mob)
@@ -55,6 +59,11 @@ namespace DungeonCrawlerLibrary
         public static void AddPlayerGold(Player player, Mob mob)
         {
             player.Gold += mob.Gold;
+        }
+
+        public static int AddItemsToInventory(Mob mob)
+        {
+            return //TODO
         }
     }
 }
