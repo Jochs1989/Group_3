@@ -12,6 +12,7 @@ namespace DungeonCrawlerLibrary
         private int _hpRecovery;
         private int _attackUP;
         private int _acUP;
+
         public int HPRecovery { get { return _hpRecovery; } set { _hpRecovery = value; } }
         public int AttackUP { get { return _attackUP; } set { _attackUP = value; } }
         public int ACUP { get { return _acUP; } set { _acUP = value; } }

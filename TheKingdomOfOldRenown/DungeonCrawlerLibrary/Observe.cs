@@ -8,15 +8,15 @@ namespace DungeonCrawlerLibrary
 {
     public class Observe
     {
-        public static void ObserveArea(string noun)
+        public static void ObserveArea(Player player,string noun)
         {
-            Console.WriteLine($"You see a {Player.CurrentRoom.CurrentMob.Name}");
+            Console.WriteLine($"You see a {player.CurrentRoom.CurrentMob.Name}");
 
-            if (noun == Player.CurrentRoom.CurrentMob.Name.ToLower())
+            if (noun == player.CurrentRoom.CurrentMob.Name.ToLower())
             {
-                if (Player.CurrentRoom.CurrentMob != null)
+                if (player.CurrentRoom.CurrentMob != null)
                 {
-                    Console.WriteLine($"You see {Player.CurrentRoom.CurrentMob.Description}");
+                    Console.WriteLine($"You see {player.CurrentRoom.CurrentMob.Description}");
                 }
                 else
                 {

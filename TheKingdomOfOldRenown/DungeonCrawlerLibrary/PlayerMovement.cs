@@ -8,7 +8,7 @@ namespace DungeonCrawlerLibrary
 {
     public class PlayerMovement
     {
-        public static string DisplayMovement(string input)
+        public static string DisplayMovement(Player player, string input)
         {
             // Here after the player enters a direction the program finds which direction the user entered, then finds if the direction is valid by accessing the players current location.
             // If the direction is valid it will move the players current location to the new room by changing the currentroom in player.cs to the new subscript location.
@@ -16,9 +16,9 @@ namespace DungeonCrawlerLibrary
             #region Player Movement North
             if (input.ToLower() == "north")
             {
-                if (Player.CurrentRoom.North != -1)
+                if (player.CurrentRoom.North != -1)
                 {
-                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.North];
+                    player.CurrentRoom = GameAttributes.rooms[player.CurrentRoom.North];
                 }
                 else
                 {
@@ -30,9 +30,9 @@ namespace DungeonCrawlerLibrary
             #region Player Movement South
             else if (input.ToLower() == "south")
             {
-                if (Player.CurrentRoom.South != -1)
+                if (player.CurrentRoom.South != -1)
                 {
-                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.South];
+                    player.CurrentRoom = GameAttributes.rooms[player.CurrentRoom.South];
                 }
                 else
                 {
@@ -44,9 +44,9 @@ namespace DungeonCrawlerLibrary
             #region Player Movement East
             else if (input.ToLower() == "east")
             {
-                if (Player.CurrentRoom.East != -1)
+                if (player.CurrentRoom.East != -1)
                 {
-                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.East];
+                    player.CurrentRoom = GameAttributes.rooms[player.CurrentRoom.East];
                 }
                 else
                 {
@@ -58,9 +58,9 @@ namespace DungeonCrawlerLibrary
             #region Player Movement West
             else if (input.ToLower() == "west")
             {
-                if (Player.CurrentRoom.West != -1)
+                if (player.CurrentRoom.West != -1)
                 {
-                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.West];
+                    player.CurrentRoom = GameAttributes.rooms[player.CurrentRoom.West];
                 }
                 else
                 {
@@ -72,9 +72,9 @@ namespace DungeonCrawlerLibrary
             #region Player Movement Up
             else if (input.ToLower() == "up")
             {
-                if (Player.CurrentRoom.Up != -1)
+                if (player.CurrentRoom.Up != -1)
                 {
-                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.Up];
+                    player.CurrentRoom = GameAttributes.rooms[player.CurrentRoom.Up];
                 }
                 else
                 {
@@ -86,9 +86,9 @@ namespace DungeonCrawlerLibrary
             #region Player Movement Down
             else if (input.ToLower() == "down")
             {
-                if (Player.CurrentRoom.Down != -1)
+                if (player.CurrentRoom.Down != -1)
                 {
-                    Player.CurrentRoom = GameAttributes.rooms[Player.CurrentRoom.Down];
+                    player.CurrentRoom = GameAttributes.rooms[player.CurrentRoom.Down];
                 }
                 else
                 {

@@ -28,17 +28,17 @@ namespace DungeonCrawlerLibrary
             {
                 case "move":
                     {
-                        PlayerMovement.DisplayMovement(noun);
+                        PlayerMovement.DisplayMovement(player, noun);
                         break;
                     }
                 case "attack":
                     {
-                        Combat.RunCombat(player);
+                        Combat.RunCombat(player, noun);
                         break;
                     }
                 case "look":
                     {
-                        Observe.ObserveArea(noun);
+                        Observe.ObserveArea(player, noun);
                         break;
                     }
                 case "save":

@@ -8,7 +8,7 @@ namespace DungeonCrawlerLibrary
 {
     public class MenuOptions
     {
-        public static void DisplayMenu()
+        public static void DisplayMenu(Player player)
         {
             bool exit = false;
             string input;
@@ -41,7 +41,7 @@ namespace DungeonCrawlerLibrary
                     }
                     case "location":
                     {
-                        Console.WriteLine($"You are Currently in {Player.CurrentRoom.RoomName}");
+                        Console.WriteLine($"You are Currently in {player.CurrentRoom.RoomName}");
                         break;
                     }
                     case "weapons":

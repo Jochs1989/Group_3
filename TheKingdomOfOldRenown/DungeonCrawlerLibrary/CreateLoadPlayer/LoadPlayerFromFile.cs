@@ -13,36 +13,45 @@ namespace DungeonCrawlerLibrary
         // Also the program sends back the information for use in identifying if the user knows the password.
         public static Player LoadPlayer(string username)
         {
-            Player oldplayer = new Player("name", "pw", "class", "race", 0, 0, 0, 0, 0, false);
+            Player oldplayer = new Player("name", "pw", "class", "race", 0, 0, 0, 0, 0, 0, false);
 
             if (File.Exists($"{username}.csv"))                                                 // Sees if the file exists
             {
-                using (StreamReader fileReader = new StreamReader($"{username}.csv"))           // Opens the file
+                using (StreamReader playerfileReader = new StreamReader($"{username}.csv"))           // Opens the file
                 {
-                    while (!fileReader.EndOfStream)
+                    while (!playerfileReader.EndOfStream)
                     {
-                        var line = fileReader.ReadLine();
+                        var line = playerfileReader.ReadLine();
                         var values = line.Split(',');
 
-                        oldplayer = new Player(values[0], values[1], values[2], values[3], int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), int.Parse(values[7]), int.Parse(values[8]), bool.Parse(values[9])); // returns file informaiton for password varification.
+                        oldplayer = new Player(values[0], values[1], values[2], values[3], int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), int.Parse(values[7]), int.Parse(values[8]), int.Parse(values[9]), bool.Parse(values[10])); // returns file informaiton for password varification.
                     }
 
-                    using (StreamReader nextFileReader = new StreamReader($"{username}Weapon.csv"))
+                    using (StreamReader weapontFileReader = new StreamReader($"{username}Weapon.csv"))
                     {
-                        while(!nextFileReader.EndOfStream)
+                        while(!weapontFileReader.EndOfStream)
                         {
-                            var line = nextFileReader.ReadLine();
+                            var line = weapontFileReader.ReadLine();
                             var values = line.Split(',');
                             oldplayer.Equipment = new Weapon(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), bool.Parse(values[4]), values[5], int.Parse(values[6]), int.Parse(values[7]), int.Parse(values[8]));
                         }
 
+                        using (StreamReader inventoryFileReader = new StreamReader($"{username}Inventory.csv"))
+                        {
+                            while (!inventoryFileReader.EndOfStream)
+                            {
+                                var line = inventoryFileReader.ReadLine();
+                                var values = line.Split(',');
+                                oldplayer.Inventory = new List<InheritItem>() { new InheritItem (int.Parse(values[0]), values[1], values[2], int.Parse(values[3])) };
+                            }
+                        }
                     }
                     return oldplayer;
                 }
             }
             else
             {
-                Console.WriteLine("UserName does not exist!");
+                Console.WriteLine($"Username ({username}) does not exist!");
                 return null;
             }
         }

@@ -17,7 +17,7 @@ namespace DungeonCrawlerLibrary
         private string _attType;
         private int _gold;
         private int _xp;
-        private List<int> _itemDrop;
+        private List<InheritItem> _itemDrop;
 
 
         public int ID { get{ return _id; } set { _id = value; } }
@@ -28,7 +28,7 @@ namespace DungeonCrawlerLibrary
         public string AttackType { get { return _attType; } set { _attType = value; } }
         public int Gold { get { return _gold; } set { _gold = value; } }
         public int XP { get { return _xp; } set { _xp = value; } }
-        public List<int> ItemDrop { get { return _itemDrop; } set { _itemDrop = value; } }
+        public List<InheritItem> ItemDrop { get { return _itemDrop; } set { _itemDrop = value; } }
 
         // Constructor to assign information gathered
         #region Constructors
@@ -66,49 +66,49 @@ namespace DungeonCrawlerLibrary
         }
         #endregion
 
-        private List<int> RandomItemsDropped(int itemDrop)
+        public List<InheritItem> RandomItemsDropped(int itemDrop) //TODO Need to figure out how to save randomly generated item to mob for player to find.
         {
-            List<int> newItemList = new List<int>();
+            List<InheritItem> newItemList = new List<InheritItem>();
             switch (itemDrop)
             {
                 case 0:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 413)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 340)).ID);
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(201, 220)).ID);
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 413)));
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 340)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(201, 220)));
                     return newItemList;
                     
                 case 1:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 415)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 350)).ID);
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(212, 236)).ID);
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 415)));
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 350)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(212, 236)));
                     return newItemList;
                 case 2:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 416)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 360)).ID);
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(212, 252)).ID);
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 416)));
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(301, 360)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(212, 252)));
                     return newItemList;
                 case 3:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 419)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(330, 364)).ID);
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(231, 252)).ID);
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(401, 419)));
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(330, 364)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(231, 252)));
                     return newItemList;
                 case 4:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)).ID);
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)).ID);
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)));
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
                     return newItemList;
                 case 5:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(420, 421)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)).ID);
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)).ID);
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(420, 421)));
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
                     return newItemList;
                 case 6:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)).ID);
-                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)).ID);
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)).ID);
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)));
+                    newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
                     return newItemList;
                 default:
-                    newItemList.Add(0);
+                    newItemList.Add(GameAttributes.items[0]);
                     return newItemList;
             }
         }

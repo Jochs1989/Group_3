@@ -18,6 +18,7 @@ namespace DungeonCrawlerLibrary
         private int _xp;
         private static Room _currentroom;
         private Weapon _equipment;
+        private List<InheritItem> _playerInventories;
 
 
         public string PlayerName { get { return _playerName; } set { _playerName = value; } }
@@ -28,11 +29,11 @@ namespace DungeonCrawlerLibrary
         public int Gold { get { return _gold; } set { _gold = value; } }
         public int XP { get { return _xp; } set { _xp = value; } }
         public Weapon Equipment { get { return _equipment; } set { _equipment = value; } }
-        public static Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
-        public static List<int> Inventory { get; set; }
+        public Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
+        public List<InheritItem> Inventory { get { return _playerInventories; } set { _playerInventories = value; } }
 
         // Constructor to assign information gathered
-        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int hp, int ac, int gold, int xp, bool isDead)
+        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int currentRoom, int hp, int ac, int gold, int xp, bool isDead)
             : base(hp, ac, isDead)
         {
             PlayerName = playerName;
@@ -40,13 +41,13 @@ namespace DungeonCrawlerLibrary
             PlayerClass = playerClass;
             PlayerRace = race;
             PlayerLevel = playerLevel;
-            CurrentRoom = GameAttributes.rooms[0];
+            CurrentRoom = GameAttributes.RoomByID(currentRoom);
             HP = hp;
             AC = ac;
             Gold = gold;
             XP = xp;
             IsDead = isDead;
-            Inventory = new List<int>();
+            Inventory = new List<InheritItem>();
         }
 
         public static void AddPlayerXP(Player player, Mob mob)
@@ -54,16 +55,6 @@ namespace DungeonCrawlerLibrary
             player.XP += mob.XP;
 
             player.PlayerLevel = player.XP / 100;
-        }
-
-        public static void AddPlayerGold(Player player, Mob mob)
-        {
-            player.Gold += mob.Gold;
-        }
-
-        public static int AddItemsToInventory(Mob mob)
-        {
-            return //TODO
         }
     }
 }

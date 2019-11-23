@@ -10,31 +10,32 @@ namespace DungeonCrawlerLibrary
     {
         // This is used to display the users current location then access the current room they are in and find which directions are valid.
         // Then the program displays the valid directions back to user.
-        public static void DisplayExits()
+        public static void DisplayExits(Player player)
         {
-            Console.WriteLine("You are at {0}", Player.CurrentRoom.RoomName);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"\nYou are currently at {player.CurrentRoom.RoomName}.\nPlease Enter an action (move, attack, look) then a directive (North, goblin, desk) !\n (Example: move north)\n");
             List<string> exits = new List<string>();
-            if (Player.CurrentRoom.North != -1)
+            if (player.CurrentRoom.North != -1)
             {
                 exits.Add("North ");
             }
-            if (Player.CurrentRoom.South != -1)
+            if (player.CurrentRoom.South != -1)
             {
                 exits.Add("South ");
             }
-            if (Player.CurrentRoom.East != -1)
+            if (player.CurrentRoom.East != -1)
             {
                 exits.Add("East ");
             }
-            if (Player.CurrentRoom.West != -1)
+            if (player.CurrentRoom.West != -1)
             {
                 exits.Add("West");
             }
-            if (Player.CurrentRoom.Up != -1)
+            if (player.CurrentRoom.Up != -1)
             {
                 exits.Add("Stairway Up");
             }
-            if (Player.CurrentRoom.Down != -1)
+            if (player.CurrentRoom.Down != -1)
             {
                 exits.Add("Stairway Down");
             }
@@ -43,9 +44,9 @@ namespace DungeonCrawlerLibrary
 
             for (int index = 0; index < exits.Count; index++)
             {
-                Console.Write($"( {exits[index]} | )");
+                Console.Write($"({exits[index]}) ");
             }
-
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

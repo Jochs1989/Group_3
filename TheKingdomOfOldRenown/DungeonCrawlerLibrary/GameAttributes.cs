@@ -43,5 +43,10 @@ namespace DungeonCrawlerLibrary
         {
             return mobs.SingleOrDefault(x => x.ID == id);
         }
+
+        public static Room RoomByID(int id)
+        {
+            return rooms.SingleOrDefault(x => x.ID == id);
+        }
     }
 }

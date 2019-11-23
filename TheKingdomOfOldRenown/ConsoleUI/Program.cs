@@ -35,14 +35,11 @@ namespace ConsoleUI
             Console.ForegroundColor = ConsoleColor.White;
             #endregion Game Starts
 
-
-
             //The player is displayed exits points and previously a menu. They have access to either quit, go to the menu, or move to a new location.
             #region Player Decision
             do
             {
-                Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter an action (move, attack, look) then a directive (North, goblin, desk) !\n (Example: move north)\n");
-                ShowExitLocations.DisplayExits();                                           // Displays exits for user
+                ShowExitLocations.DisplayExits(player);                                           // Displays exits for user
                 Console.Write("\nPlease enter what you would like to do: > ");
                 string input = Console.ReadLine().ToLower();
                 Console.WriteLine("");
@@ -52,7 +49,7 @@ namespace ConsoleUI
                 }
                 else if (input == "menu")
                 {
-                    MenuOptions.DisplayMenu();                                      // Displays menu for user
+                    MenuOptions.DisplayMenu(player);                                      // Displays menu for user
                 }
                 else if (input != "menu")
                 {
