@@ -40,11 +40,12 @@ namespace DungeonCrawlerLibrary
 
                         using (StreamReader inventoryFileReader = new StreamReader($"{username}Inventory.csv")) // TODO Still need to figure out how to make the inventory work.
                         {
+                            List<InheritItem> loadedInventory = new List<InheritItem>();
                             while (!inventoryFileReader.EndOfStream)
                             {
                                 var line = inventoryFileReader.ReadLine();
                                 var values = line.Split(',');
-                                oldplayer.Inventory = new List<InheritItem>() { new InheritItem (int.Parse(values[0]), values[1], values[2], int.Parse(values[3])) };
+                                oldplayer.Inventory.Add(new InheritItem(int.Parse(values[0]), values[1], values[2], int.Parse(values[3])));
                             }
                         }
                     }

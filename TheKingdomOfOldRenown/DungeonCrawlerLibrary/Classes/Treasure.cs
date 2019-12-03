@@ -16,7 +16,7 @@ namespace DungeonCrawlerLibrary
         public bool CanUse { get { return _canUse; } set { _canUse = value; } }
 
         // Constructor to assign information gathered
-        public Treasure(int id, string name, string description, int price, bool canUse, bool questItem) : base(id, name, description, price)
+        public Treasure(int id, string name, string description, int price, bool canUse, bool questItem) : base (id, name, description, price)
         {
             ID = id;
             Name = name;

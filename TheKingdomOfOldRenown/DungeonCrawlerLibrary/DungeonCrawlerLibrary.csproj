@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\ActionCommand.cs" />
     <Compile Include="Classes\InheritItem.cs" />
+    <Compile Include="Commands\ActionCommand.cs" />
     <Compile Include="Classes\RandomNumGenerator.cs" />
+    <Compile Include="Commands\EquipWeapon.cs" />
     <Compile Include="CreateLoadPlayer\SavePlayer.cs" />
     <Compile Include="Commands\Observe.cs" />
     <Compile Include="PlayerCombat\Combat.cs" />

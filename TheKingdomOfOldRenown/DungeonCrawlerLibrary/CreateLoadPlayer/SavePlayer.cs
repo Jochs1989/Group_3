@@ -57,7 +57,7 @@ namespace DungeonCrawlerLibrary
 
                 for (int i = 0; i < player.Inventory.Count; i++)
                 {
-                    outputFile.Write($"{player.Inventory[i].ID},{player.Inventory[i].Name},{player.Inventory[i].Description},{player.Inventory[i].Price}"); 
+                    outputFile.WriteLine($"{player.Inventory[i].ID},{player.Inventory[i].Name},{player.Inventory[i].Description},{player.Inventory[i].Price}"); 
                 }
 
                 outputFile.Close();

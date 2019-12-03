@@ -10,10 +10,9 @@ namespace DungeonCrawlerLibrary
     public class Item : InheritItem
     {
         private bool _canUse;
-
         public bool CanUse { get { return _canUse; } set { _canUse = value; } }
 
-        public Item(int id, string name, string description, int price, bool canUse) : base(id, name, description, price)
+        public Item(int id, string name, string description, int price, bool canUse) : base (id, name , description, price)
         {
             ID = id;
             Name = name;

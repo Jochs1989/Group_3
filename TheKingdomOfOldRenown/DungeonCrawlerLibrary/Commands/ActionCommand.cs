@@ -48,6 +48,11 @@ namespace DungeonCrawlerLibrary
                         SavePlayer.Saving(player);
                         break;
                     }
+                case "equip":
+                    {
+                        //TODO
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("You can enter (move, attack, look, save)");

@@ -36,6 +36,7 @@ namespace DungeonCrawlerLibrary
                             Console.WriteLine($"You hit {mob.Name} for {playerDamage} damage!");
                             mob.HP -= playerDamage;
                             Console.WriteLine($"The {mob.Name} has {mob.HP} HP!");
+
                             // Once mob dies all items are automatically given to player //TODO add a display of what the player gained (xp, gold, items, etc)
                             if (mob.HP <= 0)
                             {
@@ -44,7 +45,10 @@ namespace DungeonCrawlerLibrary
                                 player.Gold += mob.Gold;
                                 player.XP += mob.XP;
                                 player.PlayerLevel = player.XP / 100;
-                                player.Inventory = mob.ItemDrop;
+                                foreach (InheritItem items in Mob.RandomItemsDropped(mob.MobRating))
+                                {
+                                    player.Inventory.Add(items);
+                                }
                                 exit = true;
                                 Console.ForegroundColor = ConsoleColor.White;
                             }
@@ -54,6 +58,7 @@ namespace DungeonCrawlerLibrary
                             Console.WriteLine("You Missed!!!");
                         }
                         Console.ForegroundColor = ConsoleColor.Red;
+
                         // Mobs turn to attack if it is still alive, rolls the mobs attacks and continues combat until the player or mob dies
                         if (mob.IsDead == false)
                         {

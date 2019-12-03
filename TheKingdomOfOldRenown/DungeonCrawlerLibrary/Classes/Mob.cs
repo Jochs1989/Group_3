@@ -17,7 +17,6 @@ namespace DungeonCrawlerLibrary
         private string _attType;
         private int _gold;
         private int _xp;
-        private List<InheritItem> _itemDrop;
 
 
         public int ID { get{ return _id; } set { _id = value; } }
@@ -28,7 +27,7 @@ namespace DungeonCrawlerLibrary
         public string AttackType { get { return _attType; } set { _attType = value; } }
         public int Gold { get { return _gold; } set { _gold = value; } }
         public int XP { get { return _xp; } set { _xp = value; } }
-        public List<InheritItem> ItemDrop { get { return _itemDrop; } set { _itemDrop = value; } }
+        public int MobRating { get; set; }
 
         // Constructor to assign information gathered
         #region Constructors
@@ -44,8 +43,8 @@ namespace DungeonCrawlerLibrary
             AttackType = attType;
             Gold = RandomGold(mobRating); 
             XP = RandomXP(mobRating);
+            MobRating = mobRating;
             IsDead = isDead;
-            ItemDrop = RandomItemsDropped(mobRating);
         }
 
         // This is how you make a copy of a mob!!!
@@ -61,12 +60,12 @@ namespace DungeonCrawlerLibrary
             AttackType = copy.AttackType;
             Gold = copy.Gold;
             XP = copy.XP;
+            MobRating = copy.MobRating;
             IsDead = copy.IsDead;
-            ItemDrop = copy.ItemDrop;
         }
         #endregion
         //TODO Need to figure out how to save randomly generated item to mob for player to find.
-        public List<InheritItem> RandomItemsDropped(int itemDrop) 
+        public static List<InheritItem> RandomItemsDropped(int itemDrop) 
         {
             List<InheritItem> newItemList = new List<InheritItem>();
             switch (itemDrop)

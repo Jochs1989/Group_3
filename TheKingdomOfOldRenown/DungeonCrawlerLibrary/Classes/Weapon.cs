@@ -22,7 +22,7 @@ namespace DungeonCrawlerLibrary
         public int Upgrades { get { return _upgrades; } set { _upgrades = value; } }
 
         // Constructor to assign information gathered
-        public Weapon(int id, string name, string description, int price, bool canEquip, string damage, int diceAmount, int diceSides, int upgrades) : base(id, name, description, price)
+        public Weapon(int id, string name, string description, int price, bool canEquip, string damage, int diceAmount, int diceSides, int upgrades) : base (id, name, description, price)
         {
             ID = id;
             Name = name;

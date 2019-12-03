@@ -18,8 +18,6 @@ namespace DungeonCrawlerLibrary
         private int _xp;
         private static Room _currentroom;
         private Weapon _equipment;
-        private List<InheritItem> _playerInventories;
-
 
         public string PlayerName { get { return _playerName; } set { _playerName = value; } }
         public string Password { get { return _password; } set { _password = value; } }
@@ -30,7 +28,7 @@ namespace DungeonCrawlerLibrary
         public int XP { get { return _xp; } set { _xp = value; } }
         public Weapon Equipment { get { return _equipment; } set { _equipment = value; } }
         public Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
-        public List<InheritItem> Inventory { get { return _playerInventories; } set { _playerInventories = value; } }
+        public List<InheritItem> Inventory { get; set; }
 
         // Constructor to assign information gathered
         public Player(string playerName, string password, string playerClass, string race, int playerLevel, int currentRoom, int hp, int ac, int gold, int xp, bool isDead)

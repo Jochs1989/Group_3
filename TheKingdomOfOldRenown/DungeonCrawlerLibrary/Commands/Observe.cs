@@ -11,7 +11,7 @@ namespace DungeonCrawlerLibrary
         // Method that takes in the players information for determining what exist in the players data. Then takes the noun that was passed and finds specially what the user is looking at.
         public static void ObserveArea(Player player,string noun)
         {
-            if (player.CurrentRoom.CurrentMob != null && noun != "")
+            if (player.CurrentRoom.CurrentMob != null && noun != "inventory" && noun != "")
             {
                 if (noun == player.CurrentRoom.CurrentMob.Name.ToLower())
                 {
@@ -21,6 +21,17 @@ namespace DungeonCrawlerLibrary
                 {
                     Console.WriteLine("You don't see anything");
                 }
+            }
+            else if (noun == "inventory")
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                foreach (InheritItem item in player.Inventory)
+                {
+                    Console.WriteLine("\nNAME\t\t\t\t\tPrice");
+                    Console.WriteLine("------------------------------------------------");
+                    Console.WriteLine($"{item.Name.PadRight(15)}\t\t\t{item.Price.ToString().PadLeft(5)}");
+                }
+                Console.ForegroundColor = ConsoleColor.White;
             }
             else if (noun == "")
             {
