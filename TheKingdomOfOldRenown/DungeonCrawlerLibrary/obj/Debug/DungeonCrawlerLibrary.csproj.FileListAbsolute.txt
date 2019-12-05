@@ -50,7 +50,3 @@ C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibra
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.pdb
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.dll
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.pdb
-C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerWinForm.exe
-C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerWinForm.pdb
-C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerWinForm.exe.config
-C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.csproj.CopyComplete

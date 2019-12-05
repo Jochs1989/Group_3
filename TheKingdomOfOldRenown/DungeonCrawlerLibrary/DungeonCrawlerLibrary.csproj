@@ -71,11 +71,5 @@
     <Compile Include="Classes\Weapon.cs" />
     <Compile Include="Commands\ShowExitLocations.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DungeonCrawlerWinForm\DungeonCrawlerWinForm.csproj">
-      <Project>{37eec3b0-49d9-490f-8e70-6241b6ce679e}</Project>
-      <Name>DungeonCrawlerWinForm</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

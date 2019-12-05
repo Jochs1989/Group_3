@@ -24,10 +24,10 @@ namespace ConsoleUI
             Console.WriteLine("Welcome to The Kingdom Of Old Renown!"); //ToDo better welcome screeen!
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Are you a Player or Admin");
-            if (Console.ReadLine().ToLower() == "admin")
-            {
-                DungeonCrawlerWinForm.Program.Main();
-            }
+            //if (Console.ReadLine().ToLower() == "admin")
+            //{
+            //    DungeonCrawlerWinForm.Program.Main();
+            //}
             Player player = NewOrOldPlayer.PlayerCreateOrLoad(); //Todo Delete old player profiles
             #endregion Startup
 

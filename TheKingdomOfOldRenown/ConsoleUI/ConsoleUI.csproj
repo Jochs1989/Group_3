@@ -54,10 +54,6 @@
       <Project>{ab782454-1ab4-4c05-8dc5-81979cd76db1}</Project>
       <Name>DungeonCrawlerLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DungeonCrawlerWinForm\DungeonCrawlerWinForm.csproj">
-      <Project>{37eec3b0-49d9-490f-8e70-6241b6ce679e}</Project>
-      <Name>DungeonCrawlerWinForm</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
