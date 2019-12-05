@@ -32,9 +32,9 @@
             this.OptionList = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Room = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Mob = new System.Windows.Forms.Button();
             this.Weapon = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Potion = new System.Windows.Forms.Button();
             this.Item = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.OptionsResults = new System.Windows.Forms.ListBox();
@@ -88,14 +88,15 @@
             this.Room.UseVisualStyleBackColor = true;
             this.Room.Click += new System.EventHandler(this.Room_Click);
             // 
-            // button2
+            // Mob
             // 
-            this.button2.Location = new System.Drawing.Point(142, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Add Mobs";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Mob.Location = new System.Drawing.Point(142, 212);
+            this.Mob.Name = "Mob";
+            this.Mob.Size = new System.Drawing.Size(86, 23);
+            this.Mob.TabIndex = 4;
+            this.Mob.Text = "Add Mobs";
+            this.Mob.UseVisualStyleBackColor = true;
+            this.Mob.Click += new System.EventHandler(this.Mob_Click);
             // 
             // Weapon
             // 
@@ -107,14 +108,15 @@
             this.Weapon.UseVisualStyleBackColor = true;
             this.Weapon.Click += new System.EventHandler(this.Weapon_Click);
             // 
-            // button4
+            // Potion
             // 
-            this.button4.Location = new System.Drawing.Point(142, 253);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Add Potions";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Potion.Location = new System.Drawing.Point(142, 253);
+            this.Potion.Name = "Potion";
+            this.Potion.Size = new System.Drawing.Size(86, 23);
+            this.Potion.TabIndex = 6;
+            this.Potion.Text = "Add Potions";
+            this.Potion.UseVisualStyleBackColor = true;
+            this.Potion.Click += new System.EventHandler(this.Potion_Click);
             // 
             // Item
             // 
@@ -134,6 +136,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "Add Treasures";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Treasure_Click);
             // 
             // OptionsResults
             // 
@@ -151,15 +154,15 @@
             this.Controls.Add(this.OptionsResults);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.Item);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Potion);
             this.Controls.Add(this.Weapon);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Mob);
             this.Controls.Add(this.Room);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.OptionList);
             this.Controls.Add(this.label1);
             this.Name = "Menu";
-            this.Text = "Menu";
+            this.Text = "Menu";    
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,9 +174,9 @@
         private System.Windows.Forms.ListBox OptionList;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Room;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Mob;
         private System.Windows.Forms.Button Weapon;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Potion;
         private System.Windows.Forms.Button Item;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListBox OptionsResults;

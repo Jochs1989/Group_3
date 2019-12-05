@@ -76,7 +76,6 @@ namespace DungeonCrawlerForms
                 }
             }
         }
-
         private void Room_Click(object sender, EventArgs e)
         {
             Room roomForm = new Room();
@@ -93,6 +92,24 @@ namespace DungeonCrawlerForms
         {
             Item itemForm = new Item();
             itemForm.Show();
+        }
+
+        private void Mob_Click(object sender, EventArgs e)
+        {
+            Mob mobForm = new Mob();
+            mobForm.Show();
+        }
+
+        private void Potion_Click(object sender, EventArgs e)
+        {
+            Potion potionForm = new Potion();
+            potionForm.Show();
+        }
+
+        private void Treasure_Click(object sender, EventArgs e)
+        {
+            Treasure treasureForm = new Treasure();
+            treasureForm.Show();
         }
     }
 }

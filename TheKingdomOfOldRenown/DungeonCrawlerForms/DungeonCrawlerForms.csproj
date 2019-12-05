@@ -58,17 +58,17 @@
     <Compile Include="Forms\MenuForm.Designer.cs">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Mob.cs">
+    <Compile Include="Forms\MobForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mob.Designer.cs">
-      <DependentUpon>Mob.cs</DependentUpon>
+    <Compile Include="Forms\MobForm.Designer.cs">
+      <DependentUpon>MobForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Potion.cs">
+    <Compile Include="Forms\PotionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Potion.Designer.cs">
-      <DependentUpon>Potion.cs</DependentUpon>
+    <Compile Include="Forms\PotionForm.Designer.cs">
+      <DependentUpon>PotionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,23 +84,26 @@
     <Compile Include="Forms\WeaponForm.Designer.cs">
       <DependentUpon>WeaponForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Treasure.cs">
+    <Compile Include="Forms\TreasureForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Treasure.Designer.cs">
-      <DependentUpon>Treasure.cs</DependentUpon>
+    <Compile Include="Forms\TreasureForm.Designer.cs">
+      <DependentUpon>TreasureForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Potion.resx">
-      <DependentUpon>Potion.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MobForm.resx">
+      <DependentUpon>MobForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PotionForm.resx">
+      <DependentUpon>PotionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RoomForm.resx">
       <DependentUpon>RoomForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Treasure.resx">
-      <DependentUpon>Treasure.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TreasureForm.resx">
+      <DependentUpon>TreasureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\WeaponForm.resx">
       <DependentUpon>WeaponForm.cs</DependentUpon>
