@@ -1,6 +1,5 @@
-﻿ID,Name,Description,Price,Can Use,Quest Item
-1,South West Key,Unlocks south west door,0,TRUE,TRUE
-2,South East Key,Unlocks south east door,0,TRUE,TRUE
-3,North West Key,Unlocks North West Door,0,TRUE,TRUE
-4,North East Key,Unlocks North East Door,0,TRUE,TRUE
-5,Gem,Pretty looking Gem,100,FALSE,FALSE
+ID,Name,Description,Price,Can Use,Quest Item
+501,SouthWestKey,Unlocks south west door,0,TRUE,TRUE
+502,SouthEastKey,Unlocks south east door,0,TRUE,TRUE
+503,NorthWestKey,Unlocks North West Door,0,TRUE,TRUE
+504,NorthEastKey,Unlocks North East Door,0,TRUE,TRUE

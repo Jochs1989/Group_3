@@ -14,6 +14,8 @@ namespace DungeonCrawlerLibrary
         private string _playerClass;
         private string _playerRace;
         private int _playerLevel;
+        private int _gold;
+        private int _xp;
         private static Room _currentroom;
         private Weapon _equipment;
 
@@ -22,26 +24,54 @@ namespace DungeonCrawlerLibrary
         public string PlayerClass { get { return _playerClass; } set { _playerClass = value; } }
         public string PlayerRace { get { return _playerRace; } set { _playerRace = value; } }
         public int PlayerLevel { get { return _playerLevel; } set { _playerLevel = value; } }
+        public int Gold { get { return _gold; } set { _gold = value; } }
+        public int XP { get { return _xp; } set { _xp = value; } }
         public Weapon Equipment { get { return _equipment; } set { _equipment = value; } }
-        public static Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
+        public Room CurrentRoom { get { return _currentroom; } set { _currentroom = value; } }
+        public List<InheritItem> Inventory { get; set; }
 
         // Constructor to assign information gathered
-        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int equipment, int hp, int ac, string attack, int gold, int xp)
-            : base(hp, ac, attack, gold, xp)
+        public Player(string playerName, string password, string playerClass, string race, int playerLevel, int currentRoom, int hp, int ac, int gold, int xp, bool isDead)
+            : base(hp, ac, isDead)
         {
             PlayerName = playerName;
             Password = password;
             PlayerClass = playerClass;
             PlayerRace = race;
             PlayerLevel = playerLevel;
-            Equipment = GameAttributes.weapons[equipment];
-            CurrentRoom = GameAttributes.rooms[0];
+            CurrentRoom = GameAttributes.RoomByID(currentRoom);
             HP = hp;
             AC = ac;
-            Attack = attack;
             Gold = gold;
             XP = xp;
+            IsDead = isDead;
+            Inventory = new List<InheritItem>();
+        }
+        // Allows the player to gain xp after killing a mob //TODO figure out how to add stat increases after player level increases.
+        public static void AddPlayerXP(Player player, Mob mob)
+        {
+            player.XP += mob.XP;
 
+            player.PlayerLevel = player.XP / 100;
+        }
+
+        public InheritItem ItemByName(Player player, string name)
+        {
+            return player.Inventory.SingleOrDefault(x => x.Name.ToLower() == name);
+        }
+
+        public void RemoveItembyName(Player player, string name)
+        {
+            InheritItem item = player.Inventory.SingleOrDefault(x => x.Name.ToLower() == name);
+
+            if(item == null)
+            {
+                Console.WriteLine($"{name} in your inventory");
+            }
+            else
+            {
+                player.Inventory.Remove(item);
+            }
         }
     }
 }

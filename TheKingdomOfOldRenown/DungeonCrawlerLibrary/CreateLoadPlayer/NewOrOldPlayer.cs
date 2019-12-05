@@ -12,7 +12,7 @@ namespace DungeonCrawlerLibrary
         public static Player PlayerCreateOrLoad()
         {
             // Class object to store player information along with variables used for varification.
-            Player oldUser = new Player("name", "pw", "class", "race", 0, 0, 0, 0, "attackType", 0, 0);
+            Player oldUser = new Player("name", "pw", "class", "race", 0, 0, 0, 0, 0, 0, false);
             string userInput;
             string userName;
             string password;
@@ -44,17 +44,20 @@ namespace DungeonCrawlerLibrary
                     // Here if the players user name is valid it will then ask the user for their password, and as long as their password is correct the program will move on
                     if (File.Exists($"{userName}.csv"))
                     {
-                        Console.Write("\nPlease Enter your Password: > ");
-                        password = Console.ReadLine();
+                        while (exit == false)
+                        {
+                            Console.Write("\nPlease Enter your Password: > ");
+                            password = Console.ReadLine();
 
-                        if (password == oldUser.Password) 
-                        {
-                            return oldUser;
-                        }
-                        else
-                        {
-                            Console.WriteLine("\nIncorrect Password!\n");
-                        }
+                            if (password == oldUser.Password)
+                            {
+                                return oldUser;
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nIncorrect Password!\n");
+                            } 
+                        } 
                     }
                 }
                 else

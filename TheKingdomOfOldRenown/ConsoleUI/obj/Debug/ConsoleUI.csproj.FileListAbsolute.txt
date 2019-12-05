@@ -80,3 +80,12 @@ C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\obj\Debug
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerLibrary.dll
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerLibrary.pdb
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.exe
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.pdb
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.exe.config

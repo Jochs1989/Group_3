@@ -22,7 +22,7 @@ namespace DungeonCrawlerLibrary
                     var line = fileReader.ReadLine();
                     var values = line.Split(',');
 
-                    GameAttributes.mobs.Add(new Mob(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), values[7], int.Parse(values[8]), int.Parse(values[9])));
+                    GameAttributes.mobs.Add(new Mob(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), values[7], int.Parse(values[8]), bool.Parse(values[9])));
                 }
             }
             #endregion
@@ -37,7 +37,7 @@ namespace DungeonCrawlerLibrary
                     var line = fileReader.ReadLine();
                     var values = line.Split(',');
 
-                    GameAttributes.weapons.Add(new Weapon(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), bool.Parse(values[4]), values[5], int.Parse(values[6]), int.Parse(values[7]), int.Parse(values[8])));
+                    GameAttributes.weapons.Add(new Weapon(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), bool.Parse(values[4]), values[5], int.Parse(values[6]), int.Parse(values[7])));
                 }
             }
             #endregion
@@ -52,7 +52,7 @@ namespace DungeonCrawlerLibrary
                     var line = fileReader.ReadLine();
                     var values = line.Split(',');
 
-                    GameAttributes.potions.Add(new Potion(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), int.Parse(values[7])));
+                    GameAttributes.potions.Add(new Potion(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6])));
                 }
             }
             #endregion
@@ -96,7 +96,7 @@ namespace DungeonCrawlerLibrary
                     var line = fileReader.ReadLine();
                     var values = line.Split(',');
 
-                    GameAttributes.rooms.Add(new Room(int.Parse(values[0]), values[1], int.Parse(values[2]), int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6])));
+                    GameAttributes.rooms.Add(new Room(int.Parse(values[0]), values[1], values[2], int.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), int.Parse(values[7]), int.Parse(values[8]), int.Parse(values[9])));
                 }
             }
             #endregion

@@ -14,15 +14,38 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             bool exit = false;
+            bool adminExit = false;
             // Here we call our list creation to create all our list from files we have saved in our bin
             // Then we show the user a welcome screen
             // Finally the program goes to player creation and asks the user if they want to create or load a player.
             
             #region Startup
             ListCreation.FromReader();
-
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Welcome to The Kingdom Of Old Renown!"); //ToDo better welcome screeen!
-
+            Console.ForegroundColor = ConsoleColor.White;
+            while (adminExit == false)
+            {
+                Console.WriteLine("Are you a Player or Admin (type 'Quit' to quit program)");
+                Console.Write("> ");
+                string choice = Console.ReadLine().ToLower();
+                if (choice == "admin")
+                {
+                    DungeonCrawlerForms.Program.Main();
+                }
+                if (choice == "player")
+                {
+                    adminExit = true;
+                }
+                if (choice == "quit")
+                {
+                    Environment.Exit(1);
+                }
+                else
+                {
+                    Console.WriteLine("Not an Option!");
+                }
+            }
             Player player = NewOrOldPlayer.PlayerCreateOrLoad(); //Todo Delete old player profiles
             #endregion Startup
 
@@ -35,14 +58,11 @@ namespace ConsoleUI
             Console.ForegroundColor = ConsoleColor.White;
             #endregion Game Starts
 
-
-
-            //The player is displayed exits points and previously a menu. They have access to either quit, go to the menu, or move to a new location.
+            //The player is displayed exits points. They have access to either quit, go to the menu, or make a decision.
             #region Player Decision
             do
             {
-                Console.WriteLine($"\nYou are currently at {Player.CurrentRoom.RoomName}.\nPlease Enter an action (move, attack, look) then a directive (North, goblin, desk) !\n (Example: move north)\n");
-                ShowExitLocations.DisplayExits();                                           // Displays exits for user
+                ShowExitLocations.DisplayExits(player);                                           // Displays exits for user
                 Console.Write("\nPlease enter what you would like to do: > ");
                 string input = Console.ReadLine().ToLower();
                 Console.WriteLine("");
@@ -50,17 +70,9 @@ namespace ConsoleUI
                 {
                     exit = true;
                 }
-                else if (input == "menu")
-                {
-                    MenuOptions.DisplayMenu();                                      // Displays menu for user
-                }
-                else if (input != "menu")
-                {
-                    ActionCommand.PlayerChoice(input, player);                              // Moves players location
-                }
                 else
                 {
-                    Console.WriteLine("Not a Valid input! Type 'Menu' to display a menu!");
+                    ActionCommand.PlayerChoice(input, player);                              // Moves players location
                 }
 
             } while (exit == false);

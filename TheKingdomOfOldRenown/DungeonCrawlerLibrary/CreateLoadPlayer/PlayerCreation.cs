@@ -64,44 +64,49 @@ namespace DungeonCrawlerLibrary
                 // This accesses our enum class and converts data inside to a string so that we can use our enums as comparision to user's entry.
                 if (playerClass == Classes.Warrior.ToString() || playerClass == Classes.Mage.ToString() || playerClass == Classes.Rogue.ToString() || playerClass == Classes.Paladin.ToString())
                 {
+                    // After the class is chosen, the player gets stats based off class chosen.
                     newPlayer.PlayerClass = playerClass;
                     switch (playerClass)
                     {
                         case "Warrior":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[0].BeginningWeapon;
+                            newPlayer.CurrentRoom = GameAttributes.rooms[0];
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(201);
                             newPlayer.HP = 100;
                             newPlayer.AC = 12;
-                            newPlayer.Attack = GameAttributes.weapons[0].Damage;
                             newPlayer.Gold = 50;
-                            newPlayer.XP = 25;
+                            newPlayer.XP = 125;
+                            newPlayer.IsDead = false;
                             break;
                         case "Mage":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[1].BeginningWeapon;
+                            newPlayer.CurrentRoom = GameAttributes.rooms[0];
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(202);
                             newPlayer.HP = 80;
                             newPlayer.AC = 8;
-                            newPlayer.Attack = GameAttributes.weapons[1].Damage;
                             newPlayer.Gold = 100;
-                            newPlayer.XP = 75;
+                            newPlayer.XP = 175;
+                            newPlayer.IsDead = false;
                             break;
                         case "Rogue":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[2].BeginningWeapon;
+                            newPlayer.CurrentRoom = GameAttributes.rooms[0];
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(203);
                             newPlayer.HP = 90;
                             newPlayer.AC = 10;
-                            newPlayer.Attack = GameAttributes.weapons[2].Damage;
                             newPlayer.Gold = 75;
-                            newPlayer.XP = 50;
+                            newPlayer.XP = 150;
+                            newPlayer.IsDead = false;
                             break;
                         case "Paladin":
                             newPlayer.PlayerLevel = 1;
-                            newPlayer.Equipment.ID = GameAttributes.weapons[3].BeginningWeapon;
+                            newPlayer.CurrentRoom = GameAttributes.rooms[0];
+                            newPlayer.Equipment = GameAttributes.PlayerWeaponByID(204);
                             newPlayer.HP = 110;
                             newPlayer.AC = 14;
-                            newPlayer.Attack = GameAttributes.weapons[3].Damage;
                             newPlayer.Gold = 25;
-                            newPlayer.XP = 0;
+                            newPlayer.XP = 100;
+                            newPlayer.IsDead = false;
                             break;
                         default:
                             Console.WriteLine("Invalid input");

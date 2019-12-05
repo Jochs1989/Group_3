@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DungeonCrawlerForms\DungeonCrawlerForms.csproj">
+      <Project>{b3d58ff0-b276-4958-a210-26b01d5fa741}</Project>
+      <Name>DungeonCrawlerForms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DungeonCrawlerLibrary\DungeonCrawlerLibrary.csproj">
       <Project>{ab782454-1ab4-4c05-8dc5-81979cd76db1}</Project>
       <Name>DungeonCrawlerLibrary</Name>

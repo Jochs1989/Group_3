@@ -48,3 +48,5 @@ C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawler
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\obj\Debug\DungeonCrawlerLibrary.pdb
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.dll
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.pdb
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.dll
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerLibrary\bin\Debug\DungeonCrawlerLibrary.pdb

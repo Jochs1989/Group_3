@@ -11,7 +11,7 @@ namespace DungeonCrawlerLibrary
         // This is used to help for validation of whether the users input matches the Class or Race enums.
         public static string MakeFirstLetterCap(string input)
         {
-            if(String.IsNullOrEmpty(input))
+            if(string.IsNullOrEmpty(input))
             {
                 Console.WriteLine("Invalid Input!");
             }
