@@ -25,7 +25,10 @@ namespace DungeonCrawlerLibrary
         {
             return weapons.SingleOrDefault(x => x.ID == id);
         }
-        
+        public static Weapon PlayerWeaponByName(string name)
+        {
+            return weapons.SingleOrDefault(x => x.Name.ToLower() == name);
+        }
         public static Potion PlayerPotionByID(int id)
         {
             return potions.SingleOrDefault(x => x.ID == id);
@@ -38,12 +41,10 @@ namespace DungeonCrawlerLibrary
         {
             return items.SingleOrDefault(x => x.ID == id);
         }
-
         public static Mob MobByID(int id)
         {
             return mobs.SingleOrDefault(x => x.ID == id);
         }
-
         public static Room RoomByID(int id)
         {
             return rooms.SingleOrDefault(x => x.ID == id);

@@ -1,0 +1,9 @@
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\bin\Debug\DungeonCrawlerWinForm.exe.config
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\bin\Debug\DungeonCrawlerWinForm.exe
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\bin\Debug\DungeonCrawlerWinForm.pdb
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\obj\Debug\DungeonCrawlerWinForm.csprojAssemblyReference.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\obj\Debug\DungeonCrawlerWinForm.Properties.Resources.resources
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\obj\Debug\DungeonCrawlerWinForm.csproj.GenerateResource.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\obj\Debug\DungeonCrawlerWinForm.csproj.CoreCompileInputs.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\obj\Debug\DungeonCrawlerWinForm.exe
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerWinForm\obj\Debug\DungeonCrawlerWinForm.pdb

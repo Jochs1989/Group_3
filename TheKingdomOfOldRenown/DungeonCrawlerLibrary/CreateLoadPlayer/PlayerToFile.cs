@@ -37,7 +37,7 @@ namespace DungeonCrawlerLibrary
                 outputFile = File.CreateText($"{player.PlayerName}Weapon.csv");
 
                     outputFile.WriteLine($"{player.Equipment.ID},{player.Equipment.Name},{player.Equipment.Description},{player.Equipment.Price}," +
-                        $" {player.Equipment.CanEquip},{player.Equipment.Damage},{player.Equipment.DiceAmount},{player.Equipment.DiceSides},{player.Equipment.Upgrades}");
+                        $" {player.Equipment.CanEquip},{player.Equipment.Damage},{player.Equipment.DiceAmount},{player.Equipment.DiceSides}");
 
                 outputFile.Close();
             }

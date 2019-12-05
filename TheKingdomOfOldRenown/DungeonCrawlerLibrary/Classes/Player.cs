@@ -54,5 +54,24 @@ namespace DungeonCrawlerLibrary
 
             player.PlayerLevel = player.XP / 100;
         }
+
+        public InheritItem ItemByName(Player player, string name)
+        {
+            return player.Inventory.SingleOrDefault(x => x.Name.ToLower() == name);
+        }
+
+        public void RemoveItembyName(Player player, string name)
+        {
+            InheritItem item = player.Inventory.SingleOrDefault(x => x.Name.ToLower() == name);
+
+            if(item == null)
+            {
+                Console.WriteLine($"{name} in your inventory");
+            }
+            else
+            {
+                player.Inventory.Remove(item);
+            }
+        }
     }
 }

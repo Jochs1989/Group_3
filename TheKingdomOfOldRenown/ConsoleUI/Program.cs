@@ -20,9 +20,14 @@ namespace ConsoleUI
             
             #region Startup
             ListCreation.FromReader();
-
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Welcome to The Kingdom Of Old Renown!"); //ToDo better welcome screeen!
-
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Are you a Player or Admin");
+            if (Console.ReadLine().ToLower() == "admin")
+            {
+                DungeonCrawlerWinForm.Program.Main();
+            }
             Player player = NewOrOldPlayer.PlayerCreateOrLoad(); //Todo Delete old player profiles
             #endregion Startup
 
@@ -47,17 +52,9 @@ namespace ConsoleUI
                 {
                     exit = true;
                 }
-                else if (input == "menu")
-                {
-                    MenuOptions.DisplayMenu(player);                                      // Displays menu for user
-                }
-                else if (input != "menu")
-                {
-                    ActionCommand.PlayerChoice(input, player);                              // Moves players location
-                }
                 else
                 {
-                    Console.WriteLine("Not a Valid input! Type 'Menu' to display a menu!");
+                    ActionCommand.PlayerChoice(input, player);                              // Moves players location
                 }
 
             } while (exit == false);

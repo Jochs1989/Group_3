@@ -92,17 +92,17 @@ namespace DungeonCrawlerLibrary
                     newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(231, 252)));
                     return newItemList;
                 case 4:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)));
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(415, 419)));
                     newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 267)));
                     return newItemList;
                 case 5:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(420, 421)));
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(415, 419)));
                     newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
-                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
+                    newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 267)));
                     return newItemList;
                 default:
-                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(409, 421)));
+                    newItemList.Add(GameAttributes.PlayerItemByID(RandomNumGenerator.NumberBetween(415, 419)));
                     newItemList.Add(GameAttributes.PlayerPotionByID(RandomNumGenerator.NumberBetween(353, 367)));
                     newItemList.Add(GameAttributes.PlayerWeaponByID(RandomNumGenerator.NumberBetween(253, 268)));
                     return newItemList;

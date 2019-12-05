@@ -50,12 +50,30 @@ namespace DungeonCrawlerLibrary
                     }
                 case "equip":
                     {
-                        //TODO
+                        EquipWeapon.EquipmentChange(player, noun);
+                        break;
+                    }
+                case "location":
+                    {
+                        Console.WriteLine($"You are Currently in {player.CurrentRoom.RoomName}");
+                        break;
+                    }
+                case "quit":
+                    {
+                        Environment.Exit(1);
+                        break;
+                    }
+                case "menu":
+                    {
+                        foreach(Menu menuOption in GameAttributes.options)
+                        {
+                            Console.WriteLine(menuOption.Options);
+                        }
                         break;
                     }
                 default:
                     {
-                        Console.WriteLine("You can enter (move, attack, look, save)");
+                        Console.WriteLine("Type menu to see options)");
                         break;
                     }
             }

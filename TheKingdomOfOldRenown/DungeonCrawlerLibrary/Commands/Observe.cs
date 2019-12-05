@@ -11,7 +11,7 @@ namespace DungeonCrawlerLibrary
         // Method that takes in the players information for determining what exist in the players data. Then takes the noun that was passed and finds specially what the user is looking at.
         public static void ObserveArea(Player player,string noun)
         {
-            if (player.CurrentRoom.CurrentMob != null && noun != "inventory" && noun != "")
+            if (player.CurrentRoom.CurrentMob != null && noun == null)
             {
                 if (noun == player.CurrentRoom.CurrentMob.Name.ToLower())
                 {
@@ -22,20 +22,28 @@ namespace DungeonCrawlerLibrary
                     Console.WriteLine("You don't see anything");
                 }
             }
-            else if (noun == "inventory")
+            if (noun == "inventory")
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 foreach (InheritItem item in player.Inventory)
                 {
                     Console.WriteLine("\nNAME\t\t\t\t\tPrice");
                     Console.WriteLine("------------------------------------------------");
-                    Console.WriteLine($"{item.Name.PadRight(15)}\t\t\t{item.Price.ToString().PadLeft(5)}");
+                    Console.WriteLine($"{item.Name}{item.Price.ToString().PadLeft(25)}");
                 }
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            else if (noun == "")
+            if (noun == "weapon")
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("\n(NAME), (DESCIPTION), (Price)");
+                Console.WriteLine($"{player.Equipment.Name} | {player.Equipment.Description} | {player.Equipment.Price}\n");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            if (noun == "")
             {
                 Console.WriteLine($"{player.CurrentRoom.Description}");
+
                 if (player.CurrentRoom.CurrentMob != null)
                 {
                     Console.WriteLine($"You see a {player.CurrentRoom.CurrentMob.Name}");

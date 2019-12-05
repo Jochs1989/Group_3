@@ -41,14 +41,7 @@ namespace DungeonCrawlerLibrary
                             if (mob.HP <= 0)
                             {
                                 Console.ForegroundColor = ConsoleColor.Cyan;
-                                mob.IsDead = true;
-                                player.Gold += mob.Gold;
-                                player.XP += mob.XP;
-                                player.PlayerLevel = player.XP / 100;
-                                foreach (InheritItem items in Mob.RandomItemsDropped(mob.MobRating))
-                                {
-                                    player.Inventory.Add(items);
-                                }
+                                CombatResults(player, mob);
                                 exit = true;
                                 Console.ForegroundColor = ConsoleColor.White;
                             }
@@ -115,9 +108,17 @@ namespace DungeonCrawlerLibrary
 
         }
 
-        public static void CombatResults()
+        public static void CombatResults(Player player, Mob mob)
         {
+            mob.IsDead = true;
+            player.Gold += mob.Gold;
+            player.XP += mob.XP;
+            player.PlayerLevel = player.XP / 100;
 
+            foreach (InheritItem items in Mob.RandomItemsDropped(mob.MobRating))
+            {
+                player.Inventory.Add(items);
+            }
         }
     }
 }
