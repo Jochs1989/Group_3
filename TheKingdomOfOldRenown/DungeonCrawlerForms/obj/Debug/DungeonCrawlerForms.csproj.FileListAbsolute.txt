@@ -1,0 +1,16 @@
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\bin\Debug\DungeonCrawlerForms.exe.config
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\bin\Debug\DungeonCrawlerForms.exe
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\bin\Debug\DungeonCrawlerForms.pdb
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\bin\Debug\DungeonCrawlerLibrary.dll
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\bin\Debug\DungeonCrawlerLibrary.pdb
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.csprojAssemblyReference.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.Menu.resources
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.Properties.Resources.resources
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.csproj.GenerateResource.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.csproj.CoreCompileInputs.cache
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.csproj.CopyComplete
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.exe
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.pdb
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.Potion.resources
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.Treasure.resources
+C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.Weapon.resources

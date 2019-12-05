@@ -64,7 +64,7 @@ namespace DungeonCrawlerLibrary
             IsDead = copy.IsDead;
         }
         #endregion
-        //TODO Need to figure out how to save randomly generated item to mob for player to find.
+
         public static List<InheritItem> RandomItemsDropped(int itemDrop) 
         {
             List<InheritItem> newItemList = new List<InheritItem>();

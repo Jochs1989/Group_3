@@ -48,7 +48,7 @@ namespace DungeonCrawlerLibrary
                 Console.WriteLine("Equipment did not save!");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            //TODO figure out how to save the inventory correctly if is is possible.
+
             try
             {
                 StreamWriter outputFile;

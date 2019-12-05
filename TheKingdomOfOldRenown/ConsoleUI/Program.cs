@@ -14,6 +14,7 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             bool exit = false;
+            bool adminExit = false;
             // Here we call our list creation to create all our list from files we have saved in our bin
             // Then we show the user a welcome screen
             // Finally the program goes to player creation and asks the user if they want to create or load a player.
@@ -23,11 +24,28 @@ namespace ConsoleUI
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Welcome to The Kingdom Of Old Renown!"); //ToDo better welcome screeen!
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Are you a Player or Admin");
-            //if (Console.ReadLine().ToLower() == "admin")
-            //{
-            //    DungeonCrawlerWinForm.Program.Main();
-            //}
+            while (adminExit == false)
+            {
+                Console.WriteLine("Are you a Player or Admin (type 'Quit' to quit program)");
+                Console.Write("> ");
+                string choice = Console.ReadLine().ToLower();
+                if (choice == "admin")
+                {
+                    DungeonCrawlerForms.Program.Main();
+                }
+                if (choice == "player")
+                {
+                    adminExit = true;
+                }
+                if (choice == "quit")
+                {
+                    Environment.Exit(1);
+                }
+                else
+                {
+                    Console.WriteLine("Not an Option!");
+                }
+            }
             Player player = NewOrOldPlayer.PlayerCreateOrLoad(); //Todo Delete old player profiles
             #endregion Startup
 
