@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DungeonCrawlerForms
 {
-    public partial class Menu : Form
+    public partial class MenuForm : Form
     {
-        public Menu()
+        public MenuForm()
         {
             InitializeComponent();
             OptionsResults.Visible = false;
@@ -34,7 +34,7 @@ namespace DungeonCrawlerForms
             {
                 OptionsResults.Visible = true;
                 OptionsResults.Items.Clear();
-                foreach (DungeonCrawlerLibrary.Mob mob in GameAttributes.mobs)
+                foreach (Mob mob in GameAttributes.mobs)
                 {
                     OptionsResults.Items.Add($"{mob.ID} \t|\t {mob.Name}");
                 }
@@ -43,7 +43,7 @@ namespace DungeonCrawlerForms
             {
                 OptionsResults.Visible = true;
                 OptionsResults.Items.Clear();
-                foreach (DungeonCrawlerLibrary.Item item in GameAttributes.items)
+                foreach (Item item in GameAttributes.items)
                 {
                     OptionsResults.Items.Add($"{item.ID} \t|\t {item.Name}");
                 }
@@ -52,7 +52,7 @@ namespace DungeonCrawlerForms
             {
                 OptionsResults.Visible = true;
                 OptionsResults.Items.Clear();
-                foreach (DungeonCrawlerLibrary.Weapon weapon in GameAttributes.weapons)
+                foreach (Weapon weapon in GameAttributes.weapons)
                 {
                     OptionsResults.Items.Add($"{weapon.ID} \t|\t {weapon.Name}");
                 }
@@ -61,7 +61,7 @@ namespace DungeonCrawlerForms
             {
                 OptionsResults.Visible = true;
                 OptionsResults.Items.Clear();
-                foreach (DungeonCrawlerLibrary.Potion potion in GameAttributes.potions)
+                foreach (Potion potion in GameAttributes.potions)
                 {
                     OptionsResults.Items.Add($"{potion.ID} \t|\t {potion.Name}");
                 }
@@ -70,7 +70,7 @@ namespace DungeonCrawlerForms
             {
                 OptionsResults.Visible = true;
                 OptionsResults.Items.Clear();
-                foreach (DungeonCrawlerLibrary.Treasure treasure in GameAttributes.treasures)
+                foreach (Treasure treasure in GameAttributes.treasures)
                 {
                     OptionsResults.Items.Add($"{treasure.ID} \t|\t {treasure.Name}");
                 }
@@ -78,19 +78,19 @@ namespace DungeonCrawlerForms
         }
         private void Room_Click(object sender, EventArgs e)
         {
-            Room roomForm = new Room();
+            RoomCreation roomForm = new RoomCreation();
             roomForm.Show();
         }
 
         private void Weapon_Click(object sender, EventArgs e)
         {
-            Weapon weaponform = new Weapon();
+            WeaponCreation weaponform = new WeaponCreation();
             weaponform.Show();
         }
 
         private void Item_Click(object sender, EventArgs e)
         {
-            Item itemForm = new Item();
+            ItemForm itemForm = new ItemForm();
             itemForm.Show();
         }
 
