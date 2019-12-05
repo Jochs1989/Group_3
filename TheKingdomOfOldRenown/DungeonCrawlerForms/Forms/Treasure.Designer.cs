@@ -1,6 +1,6 @@
 ﻿namespace DungeonCrawlerForms
 {
-    partial class Treasure
+    partial class TreasureForm
     {
         /// <summary>
         /// Required designer variable.

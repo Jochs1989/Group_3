@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DungeonCrawlerForms
 {
-    public partial class Potion : Form
+    public partial class PotionForm : Form
     {
-        public Potion()
+        public PotionForm()
         {
             InitializeComponent();
         }

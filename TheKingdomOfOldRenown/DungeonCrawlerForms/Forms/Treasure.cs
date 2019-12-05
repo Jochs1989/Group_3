@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DungeonCrawlerForms
 {
-    public partial class Treasure : Form
+    public partial class TreasureForm : Form
     {
-        public Treasure()
+        public TreasureForm()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace DungeonCrawlerForms
 {
-    partial class Mob
+    partial class MobForm
     {
         /// <summary>
         /// Required designer variable.

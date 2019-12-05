@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DungeonCrawlerForms
 {
-    public partial class Mob : Form
+    public partial class MobForm : Form
     {
-        public Mob()
+        public MobForm()
         {
             InitializeComponent();
         }

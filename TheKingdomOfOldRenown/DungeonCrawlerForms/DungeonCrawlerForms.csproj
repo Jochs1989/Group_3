@@ -90,6 +90,9 @@
     <Compile Include="Forms\Treasure.Designer.cs">
       <DependentUpon>Treasure.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\ItemForm.resx">
+      <DependentUpon>ItemForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>

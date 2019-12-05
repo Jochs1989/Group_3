@@ -1,6 +1,6 @@
 ﻿namespace DungeonCrawlerForms
 {
-    partial class Potion
+    partial class PotionForm
     {
         /// <summary>
         /// Required designer variable.
