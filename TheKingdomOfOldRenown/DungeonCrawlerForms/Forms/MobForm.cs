@@ -7,71 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DungeonCrawlerLibrary;
+
 
 namespace DungeonCrawlerForms
 {
-    public partial class Mob : Form
+    public partial class MobForm : Form
     {
-        public Mob()
+        public MobForm()
         {
             InitializeComponent();
         }
-        private void mobID_Click(object sender, EventArgs e)
-        {
-
-        }
-
+  
         private void addMob_Click(object sender, EventArgs e)
         {
-            DungeonCrawlerLibrary.GameAttributes.mobs.Add(new DungeonCrawlerLibrary.Mob(textBox1_TextChanged, textBox2_TextChanged, textBox3_TextChanged, textBox4_TextChanged,
-                textBox5_TextChanged, textBox6_TextChanged, textBox7_TextChanged, textBox8_TextChanged, textBox9_TextChanged, textBox10_TextChanged));
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
+            GameAttributes.mobs.Add(new Mob(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), int.Parse(textBox5.Text), int.Parse(textBox6.Text), 
+                int.Parse(textBox7.Text), textBox8.Text, int.Parse(textBox9.Text), bool.Parse(textBox10.Text)));
         }
     }
 }

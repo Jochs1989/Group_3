@@ -1,6 +1,6 @@
 ﻿namespace DungeonCrawlerForms
 {
-    partial class Mob
+    partial class MobForm
     {
         /// <summary>
         /// Required designer variable.
@@ -50,6 +50,7 @@
             this.mobID = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.addMob = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,9 +76,9 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.mobID);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(206, 12);
+            this.groupBox1.Location = new System.Drawing.Point(9, 43);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(481, 405);
+            this.groupBox1.Size = new System.Drawing.Size(352, 275);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Mob ";
@@ -85,7 +86,7 @@
             // mobIsDead
             // 
             this.mobIsDead.AutoSize = true;
-            this.mobIsDead.Location = new System.Drawing.Point(79, 365);
+            this.mobIsDead.Location = new System.Drawing.Point(79, 246);
             this.mobIsDead.Name = "mobIsDead";
             this.mobIsDead.Size = new System.Drawing.Size(44, 13);
             this.mobIsDead.TabIndex = 19;
@@ -93,16 +94,17 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(178, 365);
+            this.textBox10.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox10.Location = new System.Drawing.Point(178, 246);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(154, 20);
             this.textBox10.TabIndex = 18;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            this.textBox10.Text = "Enter True/ False";
             // 
             // mobRate
             // 
             this.mobRate.AutoSize = true;
-            this.mobRate.Location = new System.Drawing.Point(79, 330);
+            this.mobRate.Location = new System.Drawing.Point(79, 220);
             this.mobRate.Name = "mobRate";
             this.mobRate.Size = new System.Drawing.Size(65, 13);
             this.mobRate.TabIndex = 17;
@@ -111,7 +113,7 @@
             // mobAttackType
             // 
             this.mobAttackType.AutoSize = true;
-            this.mobAttackType.Location = new System.Drawing.Point(79, 289);
+            this.mobAttackType.Location = new System.Drawing.Point(79, 194);
             this.mobAttackType.Name = "mobAttackType";
             this.mobAttackType.Size = new System.Drawing.Size(65, 13);
             this.mobAttackType.TabIndex = 16;
@@ -120,7 +122,7 @@
             // mobAttAmount
             // 
             this.mobAttAmount.AutoSize = true;
-            this.mobAttAmount.Location = new System.Drawing.Point(79, 257);
+            this.mobAttAmount.Location = new System.Drawing.Point(79, 168);
             this.mobAttAmount.Name = "mobAttAmount";
             this.mobAttAmount.Size = new System.Drawing.Size(80, 13);
             this.mobAttAmount.TabIndex = 15;
@@ -129,7 +131,7 @@
             // mobAttSides
             // 
             this.mobAttSides.AutoSize = true;
-            this.mobAttSides.Location = new System.Drawing.Point(79, 209);
+            this.mobAttSides.Location = new System.Drawing.Point(79, 142);
             this.mobAttSides.Name = "mobAttSides";
             this.mobAttSides.Size = new System.Drawing.Size(70, 13);
             this.mobAttSides.TabIndex = 14;
@@ -138,7 +140,7 @@
             // mobAC
             // 
             this.mobAC.AutoSize = true;
-            this.mobAC.Location = new System.Drawing.Point(79, 168);
+            this.mobAC.Location = new System.Drawing.Point(79, 116);
             this.mobAC.Name = "mobAC";
             this.mobAC.Size = new System.Drawing.Size(21, 13);
             this.mobAC.TabIndex = 13;
@@ -146,48 +148,53 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(178, 330);
+            this.textBox9.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox9.Location = new System.Drawing.Point(178, 220);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(154, 20);
             this.textBox9.TabIndex = 12;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.textBox9.Text = "Enter Mob Rating ";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(178, 289);
+            this.textBox8.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox8.Location = new System.Drawing.Point(178, 194);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(154, 20);
             this.textBox8.TabIndex = 11;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.textBox8.Text = "Enter Mob Attack Type";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(178, 254);
+            this.textBox7.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox7.Location = new System.Drawing.Point(178, 168);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(154, 20);
             this.textBox7.TabIndex = 10;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.textBox7.Text = "Enter Mob Attack Amount";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(178, 209);
+            this.textBox6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox6.Location = new System.Drawing.Point(178, 142);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(154, 20);
             this.textBox6.TabIndex = 9;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.Text = "Enter Mob Attack Sides";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(178, 168);
+            this.textBox5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox5.Location = new System.Drawing.Point(178, 116);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(154, 20);
             this.textBox5.TabIndex = 8;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.Text = "Enter Mob AC";
             // 
             // mobHP
             // 
             this.mobHP.AutoSize = true;
-            this.mobHP.Location = new System.Drawing.Point(79, 121);
+            this.mobHP.Location = new System.Drawing.Point(79, 90);
             this.mobHP.Name = "mobHP";
             this.mobHP.Size = new System.Drawing.Size(22, 13);
             this.mobHP.TabIndex = 7;
@@ -196,7 +203,7 @@
             // mobDescription
             // 
             this.mobDescription.AutoSize = true;
-            this.mobDescription.Location = new System.Drawing.Point(79, 81);
+            this.mobDescription.Location = new System.Drawing.Point(79, 64);
             this.mobDescription.Name = "mobDescription";
             this.mobDescription.Size = new System.Drawing.Size(60, 13);
             this.mobDescription.TabIndex = 6;
@@ -205,7 +212,7 @@
             // mobName
             // 
             this.mobName.AutoSize = true;
-            this.mobName.Location = new System.Drawing.Point(79, 45);
+            this.mobName.Location = new System.Drawing.Point(79, 38);
             this.mobName.Name = "mobName";
             this.mobName.Size = new System.Drawing.Size(35, 13);
             this.mobName.TabIndex = 5;
@@ -213,49 +220,52 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(178, 121);
+            this.textBox4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox4.Location = new System.Drawing.Point(178, 90);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(154, 20);
             this.textBox4.TabIndex = 4;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.Text = "Enter Mob HP";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(178, 81);
+            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox3.Location = new System.Drawing.Point(178, 64);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(154, 20);
             this.textBox3.TabIndex = 3;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.Text = "Enter Mob Description";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(178, 45);
+            this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBox2.Location = new System.Drawing.Point(178, 38);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(154, 20);
             this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Text = "Enter Mob Name";
             // 
             // mobID
             // 
             this.mobID.AutoSize = true;
-            this.mobID.Location = new System.Drawing.Point(79, 19);
+            this.mobID.Location = new System.Drawing.Point(79, 12);
             this.mobID.Name = "mobID";
             this.mobID.Size = new System.Drawing.Size(18, 13);
             this.mobID.TabIndex = 1;
             this.mobID.Text = "ID";
-            this.mobID.Click += new System.EventHandler(this.mobID_Click);
             // 
             // textBox1
             // 
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.textBox1.Location = new System.Drawing.Point(178, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Text = "Enter Mob ID";
             // 
             // addMob
             // 
-            this.addMob.Location = new System.Drawing.Point(427, 423);
+            this.addMob.Location = new System.Drawing.Point(161, 324);
             this.addMob.Name = "addMob";
             this.addMob.Size = new System.Drawing.Size(75, 23);
             this.addMob.TabIndex = 1;
@@ -263,18 +273,30 @@
             this.addMob.UseVisualStyleBackColor = true;
             this.addMob.Click += new System.EventHandler(this.addMob_Click);
             // 
-            // Mob
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(124, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mob Creation";
+            // 
+            // MobForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(370, 360);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.addMob);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Mob";
+            this.Name = "MobForm";
             this.Text = "Mob";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -302,5 +324,6 @@
         private System.Windows.Forms.Label mobRate;
         private System.Windows.Forms.Label mobIsDead;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label1;
     }
 }
