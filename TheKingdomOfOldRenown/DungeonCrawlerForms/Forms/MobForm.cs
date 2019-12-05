@@ -23,7 +23,7 @@ namespace DungeonCrawlerForms
 
         private void addMob_Click(object sender, EventArgs e)
         {
-            DungeonCrawlerLibrary.GameAttributes.mobs.Add(new Mob(textBox1_TextChanged, textBox2_TextChanged, textBox3_TextChanged, textBox4_TextChanged,
+            DungeonCrawlerLibrary.GameAttributes.mobs.Add(new DungeonCrawlerLibrary.Mob(textBox1_TextChanged, textBox2_TextChanged, textBox3_TextChanged, textBox4_TextChanged,
                 textBox5_TextChanged, textBox6_TextChanged, textBox7_TextChanged, textBox8_TextChanged, textBox9_TextChanged, textBox10_TextChanged));
         }
 
