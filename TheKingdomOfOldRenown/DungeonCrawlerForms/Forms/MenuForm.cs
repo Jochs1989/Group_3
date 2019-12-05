@@ -77,9 +77,22 @@ namespace DungeonCrawlerForms
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Room_Click(object sender, EventArgs e)
         {
-            
+            Room roomForm = new Room();
+            roomForm.Show();
+        }
+
+        private void Weapon_Click(object sender, EventArgs e)
+        {
+            Weapon weaponform = new Weapon();
+            weaponform.Show();
+        }
+
+        private void Item_Click(object sender, EventArgs e)
+        {
+            Item itemForm = new Item();
+            itemForm.Show();
         }
     }
 }

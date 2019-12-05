@@ -89,3 +89,6 @@ C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\obj\
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.exe
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.pdb
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.exe.config
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.exe
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.pdb
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\ConsoleUI\bin\Debug\DungeonCrawlerForms.exe.config

@@ -1,23 +1,23 @@
 ID ,Name,Description,Price,Can Equipt,Damage Type,Dice Amount,Dice Sides
-201,Sword,A Short sword,10,TRUE,slashing,1,4
-202,Staff,A 2 handed staff,10,TRUE,magic,1,4
-203,Dagger,A Short dagger,10,TRUE,slashing,1,4
-204,Hammer,A 2 handed Hammer,10,TRUE,blunt,1,4
-205,Club,A 2-handed club,50,TRUE,blunt,1,6
-206,Javelin,A throwing javelin,50,TRUE,peircing,1,6
-207,Mace,A small Mace,50,TRUE,blunt,1,6
-208,Spear,A short Spear,50,TRUE,peircing,1,6
-209,Scimitar,A curve bladded sword,60,TRUE,slashing,1,6
-210,Trident,A spear with 3 prongs,70,TRUE,peircing,1,6
-211,Maul,A heavy hammer,70,TRUE,blunt,1,6
-212,Lance,A 2 handed spear,75,TRUE,peircing,1,8
-213,Rapier,An elegant sword ,75,TRUE,peircing,2,4
-214,Dagger,A Short dagger,100,TRUE,slashing,2,4
-215,Glaive,A pole-arm with a long blade at the end,100,TRUE,slashing,1,10
-216,Battleaxe,A 2 handed giant axe,100,TRUE,slashing,1,10
-217,Halberd,A pole-arm with an axe blade at the end,100,TRUE,slashing,1,10
-218,Whip,A whip,50,TRUE,blunt,2,3
-219,Warhammer,A 2 handed heavy hammer,100,TRUE,blunt,1,10
+201,RegularSword,A Short sword,10,TRUE,slashing,1,4
+202,RegularStaff,A 2 handed staff,10,TRUE,magic,1,4
+203,RegularDagger,A Short dagger,10,TRUE,slashing,1,4
+204,RegularHammer,A 2 handed Hammer,10,TRUE,blunt,1,4
+205,RegularClub,A 2-handed club,50,TRUE,blunt,1,6
+206,RegularJavelin,A throwing javelin,50,TRUE,peircing,1,6
+207,RegularMace,A small Mace,50,TRUE,blunt,1,6
+208,RegularSpear,A short Spear,50,TRUE,peircing,1,6
+209,RegularScimitar,A curve bladded sword,60,TRUE,slashing,1,6
+210,RegularTrident,A spear with 3 prongs,70,TRUE,peircing,1,6
+211,RegularMaul,A heavy hammer,70,TRUE,blunt,1,6
+212,RegularLance,A 2 handed spear,75,TRUE,peircing,1,8
+213,RegularRapier,An elegant sword ,75,TRUE,peircing,2,4
+214,RegularDagger,A Short dagger,100,TRUE,slashing,2,4
+215,RegularGlaive,A pole-arm with a long blade at the end,100,TRUE,slashing,1,10
+216,RegularBattleaxe,A 2 handed giant axe,100,TRUE,slashing,1,10
+217,RegularHalberd,A pole-arm with an axe blade at the end,100,TRUE,slashing,1,10
+218,RegularWhip,A whip,50,TRUE,blunt,2,3
+219,RegularWarhammer,A 2 handed heavy hammer,100,TRUE,blunt,1,10
 220,GoldClub,A 2-handed golden club,200,TRUE,blunt,1,10
 221,GoldJavelin,A golden throwing javelin,200,TRUE,peircing,1,10
 222,GoldMace,A small golden Mace,200,TRUE,blunt,1,10
