@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.OptionList = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Room = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Weapon = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Item = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.OptionsResults = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -78,15 +78,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "OPTIONS";
             // 
-            // button1
+            // Room
             // 
-            this.button1.Location = new System.Drawing.Point(50, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add Rooms";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.Room.Location = new System.Drawing.Point(50, 212);
+            this.Room.Name = "Room";
+            this.Room.Size = new System.Drawing.Size(86, 23);
+            this.Room.TabIndex = 3;
+            this.Room.Text = "Add Rooms";
+            this.Room.UseVisualStyleBackColor = true;
+            this.Room.Click += new System.EventHandler(this.Room_Click);
             // 
             // button2
             // 
@@ -97,14 +97,15 @@
             this.button2.Text = "Add Mobs";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Weapon
             // 
-            this.button3.Location = new System.Drawing.Point(50, 253);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Add Weapons";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Weapon.Location = new System.Drawing.Point(50, 253);
+            this.Weapon.Name = "Weapon";
+            this.Weapon.Size = new System.Drawing.Size(86, 23);
+            this.Weapon.TabIndex = 5;
+            this.Weapon.Text = "Add Weapons";
+            this.Weapon.UseVisualStyleBackColor = true;
+            this.Weapon.Click += new System.EventHandler(this.Weapon_Click);
             // 
             // button4
             // 
@@ -115,14 +116,15 @@
             this.button4.Text = "Add Potions";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Item
             // 
-            this.button5.Location = new System.Drawing.Point(50, 294);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(86, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Add items";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Item.Location = new System.Drawing.Point(50, 294);
+            this.Item.Name = "Item";
+            this.Item.Size = new System.Drawing.Size(86, 23);
+            this.Item.TabIndex = 7;
+            this.Item.Text = "Add items";
+            this.Item.UseVisualStyleBackColor = true;
+            this.Item.Click += new System.EventHandler(this.Item_Click);
             // 
             // button6
             // 
@@ -148,11 +150,11 @@
             this.ClientSize = new System.Drawing.Size(632, 357);
             this.Controls.Add(this.OptionsResults);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Item);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Weapon);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Room);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.OptionList);
             this.Controls.Add(this.label1);
@@ -168,11 +170,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox OptionList;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Room;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Weapon;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Item;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListBox OptionsResults;
     }
