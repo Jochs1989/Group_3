@@ -20,7 +20,15 @@ namespace DungeonCrawlerForms
 
         private void AddTreasure_Click(object sender, EventArgs e)
         {
-            GameAttributes.treasures.Add(new Treasure(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), bool.Parse(textBox5.Text), bool.Parse(textBox6.Text)));
+            try
+            {
+                GameAttributes.treasures.Add(new Treasure(int.Parse(textBox1.Text), textBox2.Text, textBox3.Text, int.Parse(textBox4.Text), bool.Parse(textBox5.Text),
+                    bool.Parse(textBox6.Text)));
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }

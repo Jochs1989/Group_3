@@ -262,6 +262,7 @@
             this.textBox1.Size = new System.Drawing.Size(154, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Enter Mob ID";
+
             // 
             // addMob
             // 
