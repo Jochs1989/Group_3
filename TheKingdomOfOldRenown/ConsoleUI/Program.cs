@@ -11,7 +11,7 @@ namespace ConsoleUI
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             bool exit = false;
             bool adminExit = false;

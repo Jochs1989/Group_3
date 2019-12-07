@@ -333,7 +333,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox DescriptionBox;
         private System.Windows.Forms.Label Description;
-        private System.Windows.Forms.Label Name;
+        private new System.Windows.Forms.Label Name;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Label South;
         private System.Windows.Forms.TextBox SouthBox;
