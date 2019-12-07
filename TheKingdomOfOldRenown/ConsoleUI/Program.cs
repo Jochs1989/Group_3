@@ -33,11 +33,11 @@ namespace ConsoleUI
                 {
                     DungeonCrawlerForms.Program.Main();
                 }
-                if (choice == "player")
+                else if (choice == "player")
                 {
                     adminExit = true;
                 }
-                if (choice == "quit")
+                else if (choice == "quit")
                 {
                     Environment.Exit(1);
                 }
