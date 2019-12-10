@@ -15,6 +15,6 @@ namespace DungeonCrawlerLibrary
 
         Dwarf,
 
-        Orc,
+        Orc
     }
 }
