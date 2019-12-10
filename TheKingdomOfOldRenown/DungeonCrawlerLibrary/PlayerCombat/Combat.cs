@@ -117,15 +117,7 @@ namespace DungeonCrawlerLibrary
 
             foreach (InheritItem items in Mob.RandomItemsDropped(mob.MobRating))
             {
-                if (items.ID == player.Inventory.SingleOrDefault(x => x.ID == items.ID).ID)
-                {
-                    player.Inventory.Add(items);
-                    Console.WriteLine($"You gained {items.Name}");
-                }
-                else
-                {
-                    Console.WriteLine( $"You already have {items}");
-                }
+                player.Inventory.Add(items);
             }
         }
     }
