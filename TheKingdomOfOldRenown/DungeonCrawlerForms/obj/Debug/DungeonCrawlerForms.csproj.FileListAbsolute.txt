@@ -25,7 +25,7 @@ C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawler
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.csproj.CopyComplete
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.exe
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.pdb
-<<<<<<< HEAD
+
 C:\Users\stokerw5562\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.csprojAssemblyReference.cache
 C:\Users\stokerw5562\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.Menu.resources
 C:\Users\stokerw5562\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.MobForm.resources
@@ -43,14 +43,14 @@ C:\Users\stokerw5562\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawl
 C:\Users\stokerw5562\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\bin\Debug\DungeonCrawlerLibrary.dll
 C:\Users\stokerw5562\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\bin\Debug\DungeonCrawlerLibrary.pdb
 C:\Users\stokerw5562\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.csproj.CopyComplete
-=======
+
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.MenuForm.resources
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.WeaponForm.resources
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.PotionForm.resources
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.TreasureForm.resources
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.RoomCreation.resources
 C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.ItemForm.resources
->>>>>>> Jeff_Dev
+
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.ItemForm.resources
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.MenuForm.resources
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.MobForm.resources
@@ -58,3 +58,5 @@ C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.RoomCreation.resources
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.TreasureForm.resources
 C:\Users\Null\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.WeaponCreation.resources
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.MobForm.resources
+C:\Users\ochsj6181\Documents\GitHub\Group_3\TheKingdomOfOldRenown\DungeonCrawlerForms\obj\Debug\DungeonCrawlerForms.WeaponCreation.resources
