@@ -1,68 +1,26 @@
 ﻿ID,Name,Description,Price,HPRecovery,AttackUP,ACUP
-301,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-302,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-303,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-304,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-305,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-306,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-307,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-308,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-309,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-310,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-311,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-312,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-313,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-314,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-315,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-316,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-317,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-318,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-319,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-320,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-321,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-322,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-323,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-324,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-325,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-326,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-327,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-328,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-329,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-330,MinorHealthPotion,A small red potion heals for 25,30,25,0,0
-331,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-332,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-333,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-334,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-335,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-336,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-337,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-338,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-339,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-340,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-341,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-342,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-343,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-344,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-345,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-346,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-347,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-348,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-349,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-350,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-351,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-352,MajorHealthPotion,A Large red potion heals for 50,70,50,0,0
-353,MinorElixer,A small purple potion heals for 75,120,75,0,0
-354,MinorElixer,A small purple potion heals for 75,120,75,0,0
-355,MinorElixer,A small purple potion heals for 75,120,75,0,0
-356,MinorElixer,A small purple potion heals for 75,120,75,0,0
-357,MinorElixer,A small purple potion heals for 75,120,75,0,0
-358,MinorElixer,A small purple potion heals for 75,120,75,0,0
-359,MinorElixer,A small purple potion heals for 75,120,75,0,0
-360,MinorElixer,A small purple potion heals for 75,120,75,0,0
-361,MinorElixer,A small purple potion heals for 75,120,75,0,0
-362,MinorElixer,A small purple potion heals for 75,120,75,0,0
-363,MinorElixer,A small purple potion heals for 75,120,75,0,0
-364,MajorElixer,A Large purple potion heals for 100,180,100,0,0
-365,MajorElixer,A Large purple potion heals for 100,180,100,0,0
-366,MajorElixer,A Large purple potion heals for 100,180,100,0,0
-367,MajorElixer,A Large purple potion heals for 100,180,100,0,0
+301,Apple,A small piece of fruit,10,5,0,0
+302,Orange,A small piece of fruit,10,5,0,0
+303,Bread,A loaf of bread,20,10,0,0
+304,Cheese,A wheel of cheese,20,10,0,0
+305,Kebab,A bowl of food,20,10,0,0
+306,Chicken,A chicken leg,30,20,0,0
+307,Meat,A small burger of beef,30,20,0,0
+308,Rabbit,A freshly cooked rabit,30,20,0,0
+309,Salmon,A freshly cooked fish,30,20,0,0
+310,Bass,A freshly cooked fish,30,20,0,0
+311,Lobster,A freshly cooked lobster,40,25,0,0
+312,Pie,A mysterious pie,40,25,0,0
+313,Pizza,A meat pizza,40,25,0,0
+314,MinorPotion,A tiny red vial,50,30,0,0
+315,MinorElixer,A tiny purple colored vial,60,40,0,0
+316,SmallPotion,A small red vial,80,50,0,0
+317,SmallElixer,A small purple colored vial,100,60,0,0
+318,MediumPotion,A medium red vial,130,70,0,0
+319,MediumElixer,A medium purple colored vial,160,80,0,0
+320,LargePotion,A large red vial,200,90,0,0
+321,LargeElixer,A large purple colored vial,240,100,0,0
+322,GreaterPotion,A large vial with a deep red glow,300,110,0,0
+323,GreaterElixer,A large vial with mulitple colors,360,120,0,0
+324,MajorPotion,A vial of bright red liquid,420,130,0,0
+325,MajorElixer,A Giant Rainbow colored vial,500,150,0,0

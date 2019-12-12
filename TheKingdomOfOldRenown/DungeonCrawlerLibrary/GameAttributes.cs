@@ -33,6 +33,10 @@ namespace DungeonCrawlerLibrary
         {
             return potions.SingleOrDefault(x => x.ID == id);
         }
+        public static Potion PlayerPotionByName(string name)
+        {
+            return potions.SingleOrDefault(x => x.Name == name);
+        }
         public static Treasure PlayerTreasureByID(int id)
         {
             return treasures.SingleOrDefault(x => x.ID == id);

@@ -53,6 +53,11 @@ namespace DungeonCrawlerLibrary
                         EquipWeapon.EquipmentChange(player, noun);
                         break;
                     }
+                case "use":
+                    {
+                        EquipWeapon.ItemUse(player, noun);
+                        break;
+                    }
                 case "location":
                     {
                         Console.WriteLine($"You are Currently in {player.CurrentRoom.RoomName}");
