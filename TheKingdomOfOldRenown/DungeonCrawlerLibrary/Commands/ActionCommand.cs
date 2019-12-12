@@ -78,7 +78,7 @@ namespace DungeonCrawlerLibrary
                     }
                 default:
                     {
-                        Console.WriteLine("Type menu to see options)");
+                        Console.WriteLine("Type menu to see options");
                         break;
                     }
             }

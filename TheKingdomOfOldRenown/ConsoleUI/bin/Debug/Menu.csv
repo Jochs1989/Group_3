@@ -1,10 +1,9 @@
 ﻿Options
-Type 'Room' to see all Rooms!
-Type 'Quit' to exit the game!
-Type 'Location' to see where you are!
-Type 'Weapons' to see weapons!
-Type 'Potions' to see Potions!
-Type 'Treasures' to see Treasures!
-Type 'Items' to see Items!
-Type 'Mobs' to see Monsters!
-Type 'Back' to return to the game!
+"You can type 'move' and a cardinal direction (north, south, east, west…Also up and down)"
+"You can type 'look' and then a noun (some options are weapon, player, inventory)"
+You can type 'attack' and then the monsters name (hint use look before attacking)
+You can type 'equip' then weapon name to equip a weapon from your inventory (hint use look inventory first)
+You can type 'use' and a potion name (does not work at the moment)
+You can type ' location' to find your current location
+You can type 'save' to save your current progress
+You can type 'quit' to exit the game
