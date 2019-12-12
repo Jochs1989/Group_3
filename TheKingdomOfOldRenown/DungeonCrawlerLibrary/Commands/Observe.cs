@@ -42,7 +42,6 @@ namespace DungeonCrawlerLibrary
             }
             if (noun == "player")
             {
-                int xp;
                 Console.WriteLine($"\nYou are a {player.PlayerClass}");
                 Console.WriteLine($"You have {player.XP%100} XP out of 100");
                 Console.WriteLine($"You are level {player.PlayerLevel}");
