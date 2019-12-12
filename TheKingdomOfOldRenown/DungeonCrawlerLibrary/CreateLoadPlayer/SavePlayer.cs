@@ -20,7 +20,7 @@ namespace DungeonCrawlerLibrary
                 outputFile = File.CreateText($"{player.PlayerName}.csv");
 
                 outputFile.WriteLine($"{player.PlayerName.Trim()},{player.Password.Trim()},{player.PlayerClass.Trim()},{player.PlayerRace.Trim()}," +
-                    $"{player.PlayerLevel},{player.CurrentRoom.ID},{player.HP},{player.AC},{player.Gold},{player.XP},{player.IsDead}");
+                    $"{player.PlayerLevel},{player.CurrentRoom.ID},{player.PlayerMaxHP},{player.HP},{player.AC},{player.Gold},{player.XP},{player.IsDead}");
 
                 outputFile.Close();
             }

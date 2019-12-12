@@ -72,8 +72,9 @@ namespace DungeonCrawlerLibrary
                             newPlayer.PlayerLevel = 1;
                             newPlayer.CurrentRoom = GameAttributes.rooms[0];
                             newPlayer.Equipment = GameAttributes.PlayerWeaponByID(201);
-                            newPlayer.HP = 100;
-                            newPlayer.AC = 12;
+                            newPlayer.PlayerMaxHP = 100;
+                            newPlayer.HP = 30;
+                            newPlayer.AC = 13;
                             newPlayer.Gold = 50;
                             newPlayer.XP = 125;
                             newPlayer.IsDead = false;
@@ -82,8 +83,9 @@ namespace DungeonCrawlerLibrary
                             newPlayer.PlayerLevel = 1;
                             newPlayer.CurrentRoom = GameAttributes.rooms[0];
                             newPlayer.Equipment = GameAttributes.PlayerWeaponByID(202);
-                            newPlayer.HP = 80;
-                            newPlayer.AC = 8;
+                            newPlayer.PlayerMaxHP = 90;
+                            newPlayer.HP = 30;
+                            newPlayer.AC = 14;
                             newPlayer.Gold = 100;
                             newPlayer.XP = 175;
                             newPlayer.IsDead = false;
@@ -92,8 +94,9 @@ namespace DungeonCrawlerLibrary
                             newPlayer.PlayerLevel = 1;
                             newPlayer.CurrentRoom = GameAttributes.rooms[0];
                             newPlayer.Equipment = GameAttributes.PlayerWeaponByID(203);
-                            newPlayer.HP = 90;
-                            newPlayer.AC = 10;
+                            newPlayer.PlayerMaxHP = 80;
+                            newPlayer.HP = 30;
+                            newPlayer.AC = 15;
                             newPlayer.Gold = 75;
                             newPlayer.XP = 150;
                             newPlayer.IsDead = false;
@@ -102,8 +105,9 @@ namespace DungeonCrawlerLibrary
                             newPlayer.PlayerLevel = 1;
                             newPlayer.CurrentRoom = GameAttributes.rooms[0];
                             newPlayer.Equipment = GameAttributes.PlayerWeaponByID(204);
-                            newPlayer.HP = 110;
-                            newPlayer.AC = 14;
+                            newPlayer.PlayerMaxHP = 110;
+                            newPlayer.HP = 30;
+                            newPlayer.AC = 13;
                             newPlayer.Gold = 25;
                             newPlayer.XP = 100;
                             newPlayer.IsDead = false;

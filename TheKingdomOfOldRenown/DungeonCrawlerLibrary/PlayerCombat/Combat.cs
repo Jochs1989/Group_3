@@ -38,7 +38,6 @@ namespace DungeonCrawlerLibrary
                                 Console.WriteLine($"You hit {mob.Name} for {playerDamage} damage!");
                                 mob.HP -= playerDamage;
                                 Console.WriteLine($"The {mob.Name} has {mob.HP} HP!");
-
                                 // Once mob dies all items are automatically given to player //TODO add a display of what the player gained (xp, gold, items, etc)
                                 if (mob.HP <= 0)
                                 {
@@ -67,7 +66,6 @@ namespace DungeonCrawlerLibrary
                                     Console.WriteLine($"The {mob.Name} hits for {mobDamage} damage!");
                                     player.HP -= mobDamage;
                                     Console.WriteLine($"The {player.PlayerName} has {player.HP} HP!");
-
                                     if (player.HP < 0)
                                     {
                                         Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -108,7 +106,7 @@ namespace DungeonCrawlerLibrary
                 }
                 else
                 {
-                    Console.WriteLine($"You cannot attack here!");
+                    Console.WriteLine("There is nothing to attack here.");
                     exit = true;
                 }
                               
@@ -121,11 +119,20 @@ namespace DungeonCrawlerLibrary
             mob.IsDead = true;
             player.Gold += mob.Gold;
             player.XP += mob.XP;
-            player.PlayerLevel = player.XP / 100;
+            player.PlayerLevel = (player.XP / 100) + 1;
+            player.PlayerMaxHP = (player.PlayerLevel * 30);
 
             foreach (InheritItem items in Mob.RandomItemsDropped(mob.MobRating))
             {
-                player.Inventory.Add(items);
+                if (player.Inventory.Find(x => x.ID == items.ID) != null)
+                {
+                    Console.WriteLine($"You already have {items}");
+                }
+                else
+                {
+                    player.Inventory.Add(items);
+                    Console.WriteLine($"You gained {items.Name}");
+                }
             }
         }
     }

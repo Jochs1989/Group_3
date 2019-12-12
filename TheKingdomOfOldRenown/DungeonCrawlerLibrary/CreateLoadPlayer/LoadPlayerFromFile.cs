@@ -13,7 +13,7 @@ namespace DungeonCrawlerLibrary
         // Also the program sends back the information for use in identifying if the user knows the password.
         public static Player LoadPlayer(string username)
         {
-            Player oldplayer = new Player("name", "pw", "class", "race", 0, 0, 0, 0, 0, 0, false);
+            Player oldplayer = new Player("name", "pw", "class", "race", 0, 0, 0, 0, 0, 0, 0, false);
 
             if (File.Exists($"{username}.csv"))                                                 // Sees if the file exists
             {
@@ -26,7 +26,7 @@ namespace DungeonCrawlerLibrary
 
                         // returns file informaiton for password varification.
                         oldplayer = new Player(values[0], values[1], values[2], values[3], int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6]), int.Parse(values[7]),
-                            int.Parse(values[8]), int.Parse(values[9]), bool.Parse(values[10]));                   
+                            int.Parse(values[8]), int.Parse(values[9]), int.Parse(values[10]), bool.Parse(values[11]));                  
                     }
 
                     using (StreamReader weapontFileReader = new StreamReader($"{username}Weapon.csv"))      // Loads in the users weapon. This makes it so that if there are any changes to the weapon the changes are saved.

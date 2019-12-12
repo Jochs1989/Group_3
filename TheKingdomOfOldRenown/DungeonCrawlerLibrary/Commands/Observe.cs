@@ -40,6 +40,14 @@ namespace DungeonCrawlerLibrary
                 Console.WriteLine($"{player.Equipment.Name} | {player.Equipment.Description} | {player.Equipment.Price}\n");
                 Console.ForegroundColor = ConsoleColor.White;
             }
+            if (noun == "player")
+            {
+                Console.WriteLine($"\nYou are a {player.PlayerClass}");
+                Console.WriteLine($"You have {player.XP%100} XP out of 100");
+                Console.WriteLine($"You are level {player.PlayerLevel}");
+                Console.WriteLine($"You have {player.HP}");
+                Console.WriteLine($"You have {player.PlayerMaxHP} max hp\n");
+            }
             if (noun == "")
             {
                 Console.WriteLine($"{player.CurrentRoom.Description}");

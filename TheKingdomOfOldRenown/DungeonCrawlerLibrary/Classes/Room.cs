@@ -76,17 +76,17 @@ namespace DungeonCrawlerLibrary
                     int rolledMob = RandomNumGenerator.NumberBetween(40, 40);
                     CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
                 }
-                else if (mobRoll < 6)
+                else if (mobRoll == 7)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(41, 41);
                     CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
                 }
-                else if (mobRoll < 6)
+                else if (mobRoll == 8)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(42, 42);
                     CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
                 }
-                else if (mobRoll < 6)
+                else if (mobRoll == 9)
                 {
                     int rolledMob = RandomNumGenerator.NumberBetween(43, 43);
                     CurrentMob = new Mob(GameAttributes.mobs[rolledMob]);
